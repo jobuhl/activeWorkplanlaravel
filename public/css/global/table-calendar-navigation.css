@@ -1,0 +1,44 @@
+
+/* Small header zur Navigation über den Kalender in Overview und planning Ordner Employer */
+.calendar-navigation {
+    background: var(--main-small-header-color);
+    height: 40px; /* leider fest einzustellen, sonst bleibt keine hoehe da... */
+    padding: 7px 0 7px 0; /* Abstand wegen Button oben und unten */
+}
+
+/* alle Elemente über den Kalender in Overview und planning Ordner Employer haben keinen Zeilenumbruch */
+.calendar-navigation * {
+    display: inline; /* kein Zeilenumbruch */
+}
+
+/* Abstand zum Linken und Rechten Rand der Navigationsleiste */
+.calendar-navigation-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.calendar-navigation h4 {
+    text-align: center; /* Versuch es in die Mitte zu bringen */
+}
+
+.calendar-navigation p {
+    float: right; /* Rechtsbuendig */
+}
+
+/* Allgemeine Button-Anpassungen */
+.navigation-today button,
+.calendar-navigation-padding button {
+    background-color: var(--main-middle-dark-color);
+    border: none;
+    border-radius: 3px;
+    padding: 3px 5px 3px 5px;
+    min-width: 27px;
+    margin: 0;
+    color: var(--main-text-white); /* Text-Farbe */
+}
+
+/* Wenn mauszeiger ueber Button */
+.navigation-today button:hover,
+.calendar-navigation-padding button:hover {
+    background-color: var(--main-highlight-color);
+}
