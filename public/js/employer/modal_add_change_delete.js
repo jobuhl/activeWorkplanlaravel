@@ -4,7 +4,7 @@
 
 function deleteAdmin(){
     alert("Your account has been permanently deleted!");
-    window.location.href="../general/index.php";
+    window.location.href="../../php/general/index.php";
 };
 
 function deleteUser() {
@@ -13,7 +13,7 @@ function deleteUser() {
 
 function deleteUserSingle() {
     alert("The user has been permanently deleted!");
-    window.location.href="../employer/planning-employer.php";
+    window.location.href="../../php/employer/planning-employer.php";
 }
 
 function deleteStore() {

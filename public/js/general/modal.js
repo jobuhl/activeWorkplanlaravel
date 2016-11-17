@@ -16,7 +16,7 @@ function forgotPassword(){
 
 function signup() {
     alert("Sign Up complete")
-    window.location.href="../employer/overview.php";
+    window.location.href="../../php/employer/overview.php";
 }
 
 
