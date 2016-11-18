@@ -19,6 +19,7 @@ include 'header-employer.php';
     <br>
     <aside class="col-xs-12 col-sm-3 side-bar">
 
+
         <?php
         include 'sidebar.php';
         ?>

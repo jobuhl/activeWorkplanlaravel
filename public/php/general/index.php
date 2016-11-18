@@ -12,6 +12,7 @@
 include 'header-general.php';
 ?>
 
+
 <!-- Body -->
 <section class="backgroundheadindex">
     <h2 style="display: none">fakeheading</h2>
@@ -244,6 +245,7 @@ include 'header-general.php';
 <?php
 include 'general-footer.php';
 ?>
+
 
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="../../css/general/index.css">
