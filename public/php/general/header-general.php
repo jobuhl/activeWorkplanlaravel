@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Header</title>
-</head>
 
-<body>
-
-<!--Start Header-->
 <header>
     <ul class="left-list" id="id-left">
         <li class="nav-image">
@@ -36,9 +28,3 @@
 <?php
 include '../general/modal-genral.php'
 ?>
-
-
-
-</body>
-
-</html>

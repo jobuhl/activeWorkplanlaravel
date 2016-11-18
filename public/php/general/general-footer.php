@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Footer</title>
-</head>
-
-<body>
-
 <!--Start footer-->
 <footer>
     <ul>
@@ -36,8 +27,3 @@ include '../general/general-links.php';
 <script src="../../js/general/header-footer.js"></script>
 <script src="../../js/general/signup.js"></script>
 <script src="../../js/general/general-mainsection.js"></script>
-
-
-</body>
-
-</html>
