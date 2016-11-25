@@ -29,7 +29,7 @@
 
     /* active / focus */
     --main-highlight-color: #00A9FF;
-    --main-active-color: #686868; /* #0C8EE8; weil noch nicht funktioniert */
+    --main-active-color: #0C8EE8; /* weil noch nicht funktioniert */
 
     /* red / yellow / green */
     --main-red-button: #FF5702;

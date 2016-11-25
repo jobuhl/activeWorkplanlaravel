@@ -23,7 +23,7 @@
 
 <!-- Bootstrap / jQuery Imports -->
 <?php
-include '../general/general-links.php';
+include '../general/links-general.php';
 ?>
 
 <!-- CSS für alle Employer-Classen-->

@@ -3,7 +3,7 @@
     <ul class="left-list" id="id-left">
         <li class="nav-image">
             <a href="index.php">
-                <img class="nav-logo" onclick="tabHighlight('index')" src="../../gif/imagelogo.gif" alt="Logo">
+                <img class="nav-logo" src="../../gif/imagelogo.gif" alt="Logo">
             </a>
         </li>
         <li class="nav-placeholder"><a id="nav-placeholder-text">Home</a></li>
@@ -12,8 +12,8 @@
         </li>
     </ul>
     <ul class="right-list" id="id-right">
-        <li><a id="index" onclick="tabHighlight(id)" href="index.php">Home</a></li>
-        <li><a id="features" onclick="tabHighlight(id)" href="features.php">Features</a></li>
+        <li><a id="index" href="index.php">Home</a></li>
+        <li><a id="features" href="features.php">Features</a></li>
         <li><a data-toggle="modal" data-target="#signinbutton">Sign In</a></li>
         <li><a data-toggle="modal" data-target="#signupbutton" onclick="nextStep(1)">Sign Up</a></li>
     </ul>

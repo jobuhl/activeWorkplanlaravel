@@ -318,7 +318,7 @@ include 'header-general.php';
 
 <!-- footer -->
 <?php
-include 'general-footer.php';
+include 'footer-general.php';
 ?>
 
 <!-- CSS -->

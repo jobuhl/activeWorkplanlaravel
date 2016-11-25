@@ -10,7 +10,7 @@
 <header>
     <ul class="left-list" id="id-left">
         <li class="nav-image"><a href="overview.php">
-                <img class="nav-logo" onclick="tabHighlight('index')" src="../../gif/imagelogo.gif" alt="Logo"></a>
+                <img class="nav-logo" src="../../gif/imagelogo.gif" alt="Logo"></a>
         </li>
         <li class="nav-placeholder"><a id="nav-placeholder-text">Home</a></li>
         <li class="nav-toggle">
@@ -18,10 +18,10 @@
         </li>
     </ul>
     <ul class="right-list" id="id-right">
-        <li><a id="overview" onclick="tabHighlight(id)" href="overview.php">Overview</a></li>
-        <li><a id="planning-employer" onclick="tabHighlight(id)" href="planning-employer.php">Planning</a></li>
-        <li><a id="account-employer" onclick="tabHighlight(id)" href="account-employer.php">Account</a></li>
-        <li><a id="index" onclick="tabHighlight(id)" href="../general/index.php">Logout</a></li>
+        <li><a id="overview" href="overview.php">Overview</a></li>
+        <li><a id="planning-employer" href="planning-employer.php">Planning</a></li>
+        <li><a id="account-employer" href="account-employer.php">Account</a></li>
+        <li><a id="index" href="../general/index.php">Logout</a></li>
     </ul>
 </header>
 

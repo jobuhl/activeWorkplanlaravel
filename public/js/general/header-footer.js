@@ -6,12 +6,17 @@ function highlightTab() {
     /* Pfadname der aktuellen Datei auslesen */
     var url = window.location.pathname;
 
-    /* Nu Dateinamen filtern */
+    /* Nur Dateinamen filtern */
     var filename = url.substring(url.lastIndexOf('/')+1);
 
     /* nur Dateinamen ohne Endung filtern */
     var tabId = filename.substring(0, filename.length - 4);
     /*alert(tabId);*/
+
+    /* Sonderfall, da die Mitarbeiter Seite im gleichen Tab wie planning ist */
+    if(tabId == "planning-employer-single-employee") {
+        tabId = "planning-employer";
+    }
 
     /* da die header Listen-IDs gleich benannt sind wie die dateien, kann ich diese exakt ansprechen */
     $('ul li #' + tabId).addClass('myActive');
@@ -79,27 +84,6 @@ function changeSectionUnderHeader(decision) {
 
     /* Erneut abstimmen, ob Body kleiner/groesser Display */
     fixFooter();
-}
-
-function tabHighlight(myTabId) {
-    /* highlightig bei allen entfernen */
-    $('ul li a').removeClass('myActive');
-
-    /* bei ausgewaehltem Element wieder highlighten */
-    /*$('ul li #' + myTabId).addClass('myActive');*/
-
-    /* neuen Placeholder Name vergeben */
-    var newName = document.getElementById(myTabId).text;
-    document.getElementById("nav-placeholder-text").innerHTML = newName;
-
-    /* dropdown wieder schliessen */
-    document.getElementById("id-right").className = "right-list";
-
-    /* placeholder wieder anzeigen */
-    document.getElementById("id-left").className = "left-list";
-
-    /* Den Body quasi wieder hoch schieben */
-    changeSectionUnderHeader(0);
 }
 
 function fixFooter() {
