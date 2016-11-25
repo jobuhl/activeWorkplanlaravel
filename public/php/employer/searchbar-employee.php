@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="../../css/employer/planning-employer.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 
-    <title>Searchbar-Employee</title>
 
-</head>
 
 <!--Dropdown Menü bei change in account employee Suche über buchstabeneingabe möglich-->
-<body>
+
 
  <h5 class="select-ueberschrift">Search or select the Employee</h5>
 <br>
@@ -58,5 +53,3 @@
 </select>
 
 
-</body>
-</html>
