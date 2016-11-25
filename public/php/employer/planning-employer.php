@@ -48,7 +48,9 @@ include 'header-employer.php';
 
         <br>
 
-        <p class="table-head-store">Individual proposals of Employees</p>
+        <div class="table-head-store">
+            <p class="table-head-a">Individual proposals of Employees</p>
+        </div>
         <table class="table-calendar">
             <tr>
                 <th></th>
@@ -249,7 +251,9 @@ include 'header-employer.php';
 
         <br>
 
-        <p class="table-head-store">Final Workplan</p>
+        <div class="table-head-store">
+            <p class="table-head-a">Final Workplan</p>
+        </div>
         <table class="table-calendar">
             <tr>
                 <th></th>
@@ -449,7 +453,9 @@ include 'header-employer.php';
         </table>
         <br>
 
-        <p class="table-head-store">Amount of Employees per time frame</p>
+        <div class="table-head-store">
+            <p class="table-head-a">Amount of Employees per time frame</p>
+        </div>
         <table class="table-calendar table-week-hours">
             <tr>
                 <th></th>

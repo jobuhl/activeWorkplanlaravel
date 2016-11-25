@@ -16,63 +16,63 @@ include 'header-employer.php';
 
 <section class="fake-body container">
     <h2 style="display: none">fakeheading</h2>
-
-
-    <aside class="col-xs-12 overview navigation">
-        <nav class="calendar-navigation">
-            <div class="col-xs-12 col-md-3 calendar-navigation-padding">
-                <button id="overview-list" onclick="overviewList()"><span class="glyphicon glyphicon-th-list"></span>
-                </button>
-                <button id="overview-kachel" onclick="overviewKachel()">
-                    <span class="glyphicon glyphicon-th-large"></span></button>
-            </div>
-
-            <div class="col-xs-12 col-md-9 calendar-navigation-padding">
-                <aside class="col-xs-4 navigation-today">
-                    <button>&lt;</button>
-                    <button>Today</button>
-                    <button> ></button>
-                </aside>
-
-                <aside class="col-xs-4">
-                    <h4>Workplans</h4>
-                </aside>
-                <aside class="col-xs-4">
-                    <p>01. - 07. Jan. 2018</p>
-                </aside>
-            </div>
-        </nav>
-        <br>
-    </aside>
-
-
+    <br>
     <aside class="col-xs-12 col-sm-3 side-bar overview">
-
         <ul>
-            <li><p>All Stores</p></li>
+            <li><p class="middle-bold">All Stores</p></li>
             <li><input type="text" placeholder="Search Store..."></li>
             <li><a>0001 Store Konstanz</a></li>
             <li><a>0002 Store München</a></li>
             <li><a>0003 Store Freiburg</a></li>
             <li><a>0004 Store Stuttgart</a></li>
         </ul>
-
         <br>
-
     </aside>
 
 
     <aside id="aside-overview" class="col-xs-12 col-sm-9 my-right-side overview list">
 
+        <nav class="calendar-navigation">
+
+            <div class="col-xs-6 col-md-5">
+
+                <aside class="col-md-3 calendar-navigation-padding">
+                    <button id="overview-list" onclick="overviewList()">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                    </button>
+                    <button id="overview-kachel" onclick="overviewKachel()">
+                        <span class="glyphicon glyphicon-th-large"></span>
+                    </button>
+                </aside>
+                <div class="col-xs-9 col-md-9 navigation-today">
+                    <button>&lt;</button>
+                    <button>Today</button>
+                    <button> ></button>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-md-7 calendar-navigation-padding">
+
+                <div class="col-xs-12 col-md-6">
+                    <h4>Workplans</h4>
+                </div>
+                <div class="col-xs-12 col-md-6 calendar-navigation-p">
+                    <p>01. - 07. Jan. 2018</p>
+                </div>
+            </div>
+        </nav>
+        <br>
+
         <aside class="col-xs-12">
-            <p class="table-head-store">0001 Store Konstanz
-                <button type="button" class="btn btn-default btn-sm" onclick="sendEmail()">
+            <div class="table-head-store">
+                <a class="table-head-a">0001 Store Konstanz</a>
+                <button onclick="sendEmail()">
                     <span class="glyphicon glyphicon-envelope"></span> E-Mail
                 </button>
-                <button type="button" class="btn btn-default btn-sm" onclick="printing()">
+                <button onclick="printing()">
                     <span class="glyphicon glyphicon-print"></span> Print
                 </button>
-            </p>
+            </div>
             <table class="table-calendar">
                 <tr>
                     <th></th>
@@ -274,14 +274,15 @@ include 'header-employer.php';
 
 
         <aside class="col-xs-12">
-            <p class="table-head-store">0002 Store München
-                <button type="button" class="btn btn-default btn-sm" onclick="sendEmail()">
+            <div class="table-head-store">
+                <a class="table-head-a">0002 Store München</a>
+                <button onclick="sendEmail()">
                     <span class="glyphicon glyphicon-envelope"></span> E-Mail
                 </button>
-                <button type="button" class="btn btn-default btn-sm" onclick="printing()">
+                <button onclick="printing()">
                     <span class="glyphicon glyphicon-print"></span> Print
                 </button>
-            </p>
+            </div>
             <table class="table-calendar">
                 <tr>
                     <th></th>
@@ -508,14 +509,15 @@ include 'header-employer.php';
         </aside>
 
         <aside class="col-xs-12">
-            <p class="table-head-store">0003 Store Freiburg
-                <button type="button" class="btn btn-default btn-sm" onclick="sendEmail()">
+            <div class="table-head-store">
+                <a class="table-head-a">0003 Store Freiburg</a>
+                <button onclick="sendEmail()">
                     <span class="glyphicon glyphicon-envelope"></span> E-Mail
                 </button>
-                <button type="button" class="btn btn-default btn-sm" onclick="printing()">
+                <button onclick="printing()">
                     <span class="glyphicon glyphicon-print"></span> Print
                 </button>
-            </p>
+            </div>
             <table class="table-calendar">
                 <tr>
                     <th></th>
@@ -717,14 +719,15 @@ include 'header-employer.php';
         </aside>
 
         <aside class="col-xs-12">
-            <p class="table-head-store">0004 Store Stuttgart
-                <button type="button" class="btn btn-default btn-sm" onclick="sendEmail()">
+            <div class="table-head-store">
+                <a class="table-head-a">0004 Store Stuttgart</a>
+                <button onclick="sendEmail()">
                     <span class="glyphicon glyphicon-envelope"></span> E-Mail
                 </button>
-                <button type="button" class="btn btn-default btn-sm" onclick="printing()">
+                <button onclick="printing()">
                     <span class="glyphicon glyphicon-print"></span> Print
                 </button>
-            </p>
+            </div>
             <table class="table-calendar">
                 <tr>
                     <th></th>
@@ -938,11 +941,13 @@ include '../employer/footer-employer.php';
 <link rel="stylesheet" type="text/css" href="../../css/global/table-calendar.css">
 <link rel="stylesheet" type="text/css" href="../../css/global/side-bar.css">
 <link rel="stylesheet" type="text/css" href="../../css/global/table-calendar-navigation.css">
+<link rel="stylesheet" type="text/css" href="../../css/employer/overview.css">
 
 <!-- JavaScript -->
 <script src="../../js/general/side-bar.js"></script>
 <script src="../../js/employer/overview.js"></script>
 <script src="../../js/employee/workplan.js"></script>
+
 
 </body>
 

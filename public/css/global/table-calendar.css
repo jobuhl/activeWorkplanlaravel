@@ -2,10 +2,22 @@
 .table-head-store {
     width: 100%;
     background-color: var(--main-small-header-color);
-    font-weight: bold;
-    font-size: 13pt;
     padding: 10px 0 10px 10px;
     margin: 0; /* weil drunter sonst Abstand */
+    min-height: 45px;
+}
+
+.table-head-store .table-head-a {
+    font-weight: bold;
+    font-size: 13pt;
+    text-decoration: none;
+    color: var(--main-text-black);
+    float: left;
+}
+
+.table-head-store button {
+    float: right;
+    margin-right: 10px;
 }
 
 /* ---------------------- TABLE LISTED ---------------------- */

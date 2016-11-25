@@ -37,9 +37,6 @@ include 'header-employee.php';
 
 
 <!-- footer -->
-
-
-
 <footer>
     <ul>
         <!--Link zu Dataprotection-->

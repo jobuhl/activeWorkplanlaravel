@@ -50,7 +50,9 @@ include 'header-employer.php';
 
         <br>
 
-        <p class="table-head-store">Individual proposals of Employees</p>
+        <div class="table-head-store">
+            <p class="table-head-a">Individual proposals of Employees</p>
+        </div>
         <table class="table-calendar table-week-listed-single">
             <tr>
                 <th></th>

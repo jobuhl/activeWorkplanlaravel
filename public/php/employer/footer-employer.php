@@ -11,12 +11,12 @@
 <footer>
     <ul>
         <!--Link zu Dataprotection-->
-        <li><a id="dataprotection" href="../general/dataprotection.php" onclick="tabHighlight(id)">Dataprotection</a>
+        <li><a id="dataprotection" href="../general/dataprotection.php">Dataprotection</a>
         </li>
         <!--Link zu Impressum-->
-        <li><a id="impressum" href="../general/impressum.php" onclick="tabHighlight(id)">Impressum</a></li>
+        <li><a id="impressum" href="../general/impressum.php">Impressum</a></li>
         <!--Link zu Contact-->
-        <li><a id="contact" href="../general/contact.php" onclick="tabHighlight(id)">Contact</a></li>
+        <li><a id="contact" href="../general/contact.php">Contact</a></li>
     </ul>
 </footer>
 <!--end footer-->

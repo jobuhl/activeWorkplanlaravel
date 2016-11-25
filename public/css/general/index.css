@@ -59,8 +59,7 @@ article {
 /* Bilder der Article */
 .bodyimage {
     width: 100%;
-    height: 350px;
-    display: block;
+    height: 100%;
 }
 
 .index-image-aside {

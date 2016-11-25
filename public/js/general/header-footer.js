@@ -72,7 +72,6 @@ function changeSectionUnderHeader(decision) {
     var amountListElements = 0;
 
     if (decision == "down") {
-
         /* berechnet anzahl an li der ul.right-list */
         $('header ul.right-list li').each(function () {
             amountListElements += 1;
