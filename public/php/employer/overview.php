@@ -927,7 +927,6 @@ include 'header-employer.php';
             </table>
             <br>
         </aside>
-
     </aside>
 
 </section>

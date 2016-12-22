@@ -6,7 +6,9 @@
                 <img class="nav-logo" src="../../gif/imagelogo.gif" alt="Logo">
             </a>
         </li>
-        <li class="nav-placeholder"><a id="nav-placeholder-text">Home</a></li>
+        <li class="nav-placeholder">
+            <a id="nav-placeholder-text">Home</a>
+        </li>
         <li class="nav-toggle">
             <a href="javascript:void(0);" onclick="toggleMakeResponsive()">&#9776;</a>
         </li>

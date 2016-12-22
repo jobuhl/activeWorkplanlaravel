@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- CSS , Extra am Anfang, weil sonst Bild zu gross und Footer nicht am Boden -->
+    <link rel="stylesheet" type="text/css" href="../../css/global/general.css">
+
     <!-- Page name -->
     <title>activeWorkplan/Contact</title>
 
@@ -74,9 +77,6 @@ include 'header-general.php';
 <?php
 include 'footer-general.php';
 ?>
-
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../../css/global/general.css">
 
 <!-- JavaScript -->
 <script src="../../js/general/contact.js"></script>

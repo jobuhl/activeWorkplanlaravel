@@ -6,12 +6,9 @@ function highlightTab() {
     /* Pfadname der aktuellen Datei auslesen */
     var url = window.location.pathname;
 
-    /* Nur Dateinamen filtern */
-    var filename = url.substring(url.lastIndexOf('/')+1);
+    /* Regular Expression Literale mit Slashes, Gruppierung und Alles durch Gruppe 1 ersetzen */
+    var tabId = url.replace(/.+\/php\/[a-zA-Z_-]+\/([a-zA-Z_-]+)\.php/ , "$1");
 
-    /* nur Dateinamen ohne Endung filtern */
-    var tabId = filename.substring(0, filename.length - 4);
-    /*alert(tabId);*/
 
     /* Sonderfall, da die Mitarbeiter Seite im gleichen Tab wie planning ist */
     if(tabId == "planning-employer-single-employee") {
@@ -20,6 +17,10 @@ function highlightTab() {
 
     /* da die header Listen-IDs gleich benannt sind wie die dateien, kann ich diese exakt ansprechen */
     $('ul li #' + tabId).addClass('myActive');
+
+    /* Den schoenen TabNamen an die PLaceholder Stelle im Header bei Mobil-Ansicht setzen */
+    var placeholder = $("li #" + tabId).text();
+    $(".nav-placeholder a").text(placeholder);
 }
 
 /* Immer wenn Window-Groesse veraendert wird Footer ausrichten */
