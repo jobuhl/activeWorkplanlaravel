@@ -3,6 +3,7 @@
 <head>
     <!-- CSS , Extra am Anfang, weil sonst Bild zu gross und Footer nicht am Boden -->
     <link rel="stylesheet" type="text/css" href="../../css/global/general.css">
+    <link rel="stylesheet" type="text/css" href="../../css/general/contact.css">
 
     <!-- Page name -->
     <title>activeWorkplan/Contact</title>
@@ -62,8 +63,9 @@ include 'header-general.php';
 
         <!-- rechts -->
         <aside class=" test col-sm-9 col-xs-12 setheightright">
-            <p><input class="form-control sendtextfeld" type="text" placeholder="Message...."></p>
-            <p><button class="form-control buttonbottom" type="submit">Send</button></p>
+            <textarea class="form-control sendtextfeld" type="text" placeholder="Message...." ></textarea>
+            <p></p>
+            <button class="form-control buttonbottom" type="submit">Send</button>
         </aside>
 
     </section>
