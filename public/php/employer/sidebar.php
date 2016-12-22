@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Page name -->
-    <title>activeWorkplan/Planning</title>
-</head>
-
-<body>
 
 <section class="fake-body sidebarPHP">
     <ul class="upper-list">
@@ -91,8 +83,4 @@
     <?php
     include '../employer/modal-employee.php'
     ?>
-
-</section>
-</body>
-</html>
 
