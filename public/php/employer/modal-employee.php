@@ -53,7 +53,7 @@
 
                         <!-- rechts -->
                         <aside class="col-xs-12 col-sm-8 aside-right">
-                            <p><input class="form-control space-cop-bottom" type="password"
+                           <input class="form-control " type="password"
                                       placeholder="Initial Password"></p>
                         </aside>
 
@@ -262,7 +262,7 @@
             </div>
             <!-- Modal footer-->
             <div class="modal-footer">
-                <button class="form-control to-right modal-change-button" data-toggle="modal"
+                <button class="form-control to-right modal-change-button"  data-toggle="modal"
                         data-target="#change-button-emp-2">Change
                 </button>
             </div>
@@ -580,7 +580,7 @@
             </div>
             <!-- Modal footer-->
             <div class="modal-footer">
-                <button class="form-control to-right delete-button" data-toggle="modal"
+                <button class="form-control to-right delete-button" data-dismiss="modal" data-toggle="modal"
                         data-target="#delete-button-emp-2">Delete
                 </button>
             </div>
@@ -823,7 +823,7 @@
             <!-- Modal footer-->
             <div class="modal-footer">
                 <button class="form-control to-right delete-button" data-dismiss="modal" data-toggle="modal"
-                        onclick="deleteUser()">
+                        data-target="#delete-button-emp-3">
                     Delete
                 </button>
             </div>
@@ -876,3 +876,4 @@
     </div>
 
 </div>
+

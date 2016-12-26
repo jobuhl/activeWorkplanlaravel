@@ -41,6 +41,7 @@
 
                     </article>
 
+
                     <!-- Zeile 2 password Change button -->
                     <article class="row">
                         <h2 style="display: none">fakeheading</h2>
@@ -52,9 +53,9 @@
 
                         <!-- rechts -->
                         <aside class="col-xs-12 col-sm-8 aside-right">
-                            <p><input class=" inputmodal form-control space-cap" type="text"
+                            <p><input class="inputmodal form-control " type="text"
                                       placeholder="Store Name">
-                            </p>
+                            
                         </aside>
 
                     </article>
@@ -223,7 +224,7 @@
 
             <!-- Modal footer-->
             <div class="modal-footer">
-                <button class="form-control to-right modal-change-button" data-toggle="modal"
+                <button class="form-control to-right modal-change-button" data-dismiss="modal" data-toggle="modal"
                         data-target="#change-button-store-2">
                     Change
                 </button>
@@ -442,7 +443,7 @@
 
             <!-- Modal footer-->
             <div class="modal-footer">
-                <button class="form-control to-right delete-button" data-toggle="modal"
+                <button class="form-control to-right delete-button" data-dismiss="modal" data-toggle="modal"
                         data-target="#delete-button-store-2">Delete
                 </button>
             </div>
@@ -465,7 +466,7 @@
                 >&times;</button>
 
                 <!-- Überschrift -->
-                <h2 class="modal-ueberschrift">Change Store</h2>
+                <h2 class="modal-ueberschrift">Delete Store</h2>
                 <br>
 
                 <!-- Übersicht der Navigation die bei Vorschritt markiert weden -->
@@ -617,21 +618,22 @@
         <!-- Modal content-->
         <div class="modal-content">
 
+            <div class="modal-header">
+
+                <!-- Close Button oben rechts im Header -->
+                <button type="button" class="close" data-dismiss="modal"
+                >&times;</button>
+
+                <!-- Überschrift -->
+
+                <h2 class="modal-ueberschrift">Delete Store</h2>
+                <br>
+
+            </div>
             <!-- Basic-->
             <div class="modal-body">
-                <div class="modal-header">
 
-                    <!-- Close Button oben rechts im Header -->
-                    <button type="button" class="close" data-dismiss="modal"
-                    >&times;</button>
-
-                    <!-- Überschrift -->
-                    <h2 class="modal-ueberschrift">Delete Store</h2>
-                    <h5 class="select-ueberschrift">Do you really want to delete Store Konstanz</h5>
-                    <br>
-
-                </div>
-
+                <h5 class="select-ueberschrift">Do you really want to delete Store Konstanz</h5>
 
             </div>
 

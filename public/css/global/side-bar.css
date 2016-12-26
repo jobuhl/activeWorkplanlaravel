@@ -87,24 +87,23 @@
 }
 
 /* Search-Feld */
-.side-bar input {
+.side-bar .input-sidebar{
     border: 0;
     background: none;
 }
 
 /*.side-bar p,*/
-.side-bar p,
-.side-bar input,
+.side-bar .input-sidebar,
 .side-bar a,
 .current-selected-store {
-    width: 100%;
-    display: block;
-    border-bottom: 1px solid var(--main-border-color);
-    padding: 10px 0 10px 5px;
-    margin: 0;
-    text-decoration: none;
-    color: var(--main-text-black);
-}
+     width: 100%;
+     display: block;
+     border-bottom: 1px solid var(--main-border-color);
+     padding: 10px 0 10px 5px;
+     margin: 0;
+     text-decoration: none;
+     color: var(--main-text-black);
+ }
 
 /* Current Store nicht anzeigen, wenn bildsfhrim breit */
 @media screen and (min-width: 768px) {

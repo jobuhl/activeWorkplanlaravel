@@ -3,7 +3,7 @@
     <ul class="upper-list">
         <li><a>Preferences</a>
             <ul>
-                <li><input type="text" placeholder="Search Store...">
+                <li><input class="input-sidebar" type="text" placeholder="Search Store...">
                 </li>
                 <li class="a-changes">
                     <a>Store</a>

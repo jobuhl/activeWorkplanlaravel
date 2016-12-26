@@ -27,3 +27,5 @@ function addemp() {
 function addstore() {
     alert("The store is added to their database!");
 }
+
+

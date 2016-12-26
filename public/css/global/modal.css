@@ -67,14 +67,17 @@
 
 .add-button{
     background-color: var(--main-green-button);
+    color: white;
 }
 
 .next-button{
     background-color: var(--main-highlight-color);
+    color: white;
 }
 
 .delete-button{
     background-color: var(--main-red-button);
+    color: white;
 }
 
 .inputmodal{
