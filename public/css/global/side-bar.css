@@ -10,10 +10,8 @@
 
 /* Trennlinie zwischen Side-bar und aside-right */
 .my-right-side {
-    /*border-left: 1px solid var(--main-border-color); */ /* rausgenommen, weil durch dynamisch berechnete border in javascript ersetzt */
     padding-left: 20px; /* Abstand zwischen Beiden spalten und Trennlinie */
 }
-
 
 /* --------------------------- LIST / Kachel --------------------------- */
 /* Padding rausnehmen, wenn darstellung auf kachel */
@@ -45,28 +43,44 @@
         display: none;
     }
 
-
     .calendar-navigation-padding h4 {
         display: none;
     }
 }
+
 /* --------------------------- LIST / Kachel Ende --------------------------- */
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .side-bar,
     .my-right-side {
         padding: 0;
         border: none;
     }
+
+    /* Auflistung der Stores nicht anzeigen */
+    .overview.side-bar > ul {
+        display: none;
+    }
+
+    /* ueberschrift aller Stores in Overview */
+    .side-bar .headline,
+    .list .current-selected-store {
+        background: var(--main-small-header-color);
+        border-bottom: 2px solid white;
+    }
+
+    /* zwischen-freiraum */
+    .overview.side-bar br,
+    .overview.list .br-under-navigation {
+        display: none;
+    }
 }
 
 /* Ueberschrift im small header */
-.side-bar .middle-bold {
+.middle-bold {
     font-weight: bold;
     text-align: center;
 }
-
 
 .side-bar li {
     list-style: none; /* damit keine punkte */
@@ -79,8 +93,10 @@
 }
 
 /*.side-bar p,*/
+.side-bar p,
+.side-bar input,
 .side-bar a,
-.side-bar input {
+.current-selected-store {
     width: 100%;
     display: block;
     border-bottom: 1px solid var(--main-border-color);
@@ -90,10 +106,25 @@
     color: var(--main-text-black);
 }
 
+/* Current Store nicht anzeigen, wenn bildsfhrim breit */
+@media screen and (min-width: 768px) {
+    .list .current-selected-store {
+        display: none;
+    }
+
+    .overview.side-bar > ul {
+        display: block;
+    }
+}
+
 /* Sub-Menu wichtig muss hierarchisch aufgeschrieben bleiben*/
 .side-bar li ul li {
     padding-left: 20px;
-    /*display: none; /* voreingestellt geschlossen */
+}
+
+/* Fuer Employer grosse Sidebar */
+.lower-list li ul {
+    display: none;
 }
 
 /* Wenn Cursor ueber dem Element */
@@ -140,12 +171,4 @@
 
 .side-bar .a-changes a:nth-child(4) {
     background-color: var(--main-red-button);
-}
-
-
-/* ----------------------- Sub-Lists in SUB-MENU ----------------------- */
-
-/* Fuer Employer grosse Sidebar */
-.lower-list li ul {
-    display: none;
 }

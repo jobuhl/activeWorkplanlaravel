@@ -142,7 +142,7 @@ footer a:focus {
 }
 
 /* ---------------------------- RESPONSIVE ---------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     ul.right-list li {
         display: none; /* Normale Tabs nicht anzeigen */

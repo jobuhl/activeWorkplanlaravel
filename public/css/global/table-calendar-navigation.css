@@ -33,6 +33,12 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .calendar-navigation {
+        background-color: white;
+    }
+}
+
 /* Allgemeine Button-Anpassungen */
 .navigation-today button,
 .calendar-navigation-padding button,

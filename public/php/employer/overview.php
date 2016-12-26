@@ -18,10 +18,10 @@ include 'header-employer.php';
     <h2 style="display: none">fakeheading</h2>
     <br>
     <aside class="col-xs-12 col-sm-3 side-bar overview">
+        <a class="middle-bold headline">Stores</a>
         <ul>
-            <li><p class="middle-bold">All Stores</p></li>
             <li><input type="text" placeholder="Search Store..."></li>
-            <li><a onclick="openSidebar()">0001 Store Konstanz</a></li>
+            <li><a onclick="sideBarBorder()">0001 Store Konstanz</a></li>
             <li><a>0002 Store München</a></li>
             <li><a>0003 Store Freiburg</a></li>
             <li><a>0004 Store Stuttgart</a></li>
@@ -32,6 +32,7 @@ include 'header-employer.php';
 
     <aside id="aside-overview" class="col-xs-12 col-sm-9 my-right-side overview list">
 
+        <p class="current-selected-store middle-bold">Current Store</p>
         <nav class="calendar-navigation">
 
             <div class="col-xs-6 col-md-5">
@@ -61,7 +62,7 @@ include 'header-employer.php';
                 </div>
             </div>
         </nav>
-        <br>
+        <br class="br-under-navigation">
 
         <aside class="col-xs-12">
             <div class="table-head-store">
