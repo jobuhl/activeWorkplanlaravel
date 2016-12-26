@@ -7,7 +7,7 @@ window.onload = function () {
 };
 
 /* Wenn Fenster vergroessert oder verkleinert wird */
-window.onresize = function () {
+$('body')[0].onresize = function () {
     /* Trennlinie nur berechnen, wenn darstellung "list" */
     if (!$("#aside-overview").hasClass("kachel")) {
         sideBarBorder();

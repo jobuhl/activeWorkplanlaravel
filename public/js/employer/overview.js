@@ -33,7 +33,7 @@ function overviewList() {
 }
 
 /* Wenn ein Listen-Element der Sidebar angeklickt wird */
-$('.overview.side-bar a').click(function() {
+$('.overview.side-bar .headline ').click(function() {
 
     /* Klick nur ermöglichen, wenn mobile Ansicht */
     if ($("body").width() <= 767) {
@@ -64,4 +64,4 @@ $('body')[0].onresize = function () {
         /* Linie zwischen side-bar und right-side neu ausrichten */
         sideBarBorder();
     }
-}
+};

@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-
-    <title>Searchbar-Store</title>
-</head>
-
 <!--Dropdown Menü bei change in account employee Suche über buchstabeneingabe möglich-->
-<body>
 
 <h5 class="select-ueberschrift">Search or select the Retail Store</h5>
 
@@ -20,6 +11,3 @@
     <option>0004 Store Stuttgart</option>
 
 </select>
-
-</body>
-</html>

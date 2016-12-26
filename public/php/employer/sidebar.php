@@ -1,4 +1,3 @@
-
 <section class="fake-body sidebarPHP">
     <ul class="upper-list">
         <li><a>Preferences</a>
@@ -71,8 +70,6 @@
 
     <br>
 
-    <!-- CSS -->
-
     <!--Store add change delete -->
     <!-- Button der Stores hinzufuegt -->
     <?php
@@ -83,4 +80,5 @@
     <?php
     include '../employer/modal-employee.php'
     ?>
+<section>
 

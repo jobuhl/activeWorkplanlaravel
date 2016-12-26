@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Head</title>
-</head>
-
-<body>
-
 <!--Start Header-->
 <header>
     <ul class="left-list" id="id-left">
@@ -28,8 +20,3 @@
 <section class="space-under-header">
     <h2 style="display: none">fakeheading</h2>
 </section>
-
-
-</body>
-
-</html>

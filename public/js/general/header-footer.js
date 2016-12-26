@@ -23,22 +23,6 @@ function highlightTab() {
     $(".nav-placeholder a").text(placeholder);
 }
 
-/* Immer wenn Window-Groesse veraendert wird Footer ausrichten */
-$('body')[0].onresize = function () {
-    /* Wenn bspw. Dropdown menu unten und Fenster wird klein gezogen, soll auch der Content wieder nach oben */
-    if ($(window).width() >= 768) {
-        changeSectionUnderHeader("up");
-    }
-
-    /* Wenn Dropdown eigentlich unten war, fenster breiter wurde und wieder kleiner wird, soll kontent wiedre nach unten */
-    if ($(window).width() < 768 && $("#id-right")[0].className === "right-list responsive") {
-        changeSectionUnderHeader("down");
-    }
-
-    /* Footer neu ausrichten */
-    fixFooter()
-};
-
 function toggleMakeResponsive() {
     /* ohne ID klappts nicht */
     var rightList = $("#id-right")[0];
@@ -68,19 +52,28 @@ function toggleMakeResponsive() {
     }
 }
 
-function changeSectionUnderHeader(decision) {
-
+function getheaderHeight() {
     var amountListElements = 0;
 
-    if (decision == "down") {
+    if ($("#id-right")[0].className === "right-list responsive") {
+
         /* berechnet anzahl an li der ul.right-list */
         $('header ul.right-list li').each(function () {
             amountListElements += 1;
         });
     }
+    return amountListElements
+}
+
+
+function changeSectionUnderHeader(decision) {
 
     /* Hoehe der Section unterm Header vergroessern / verkleinern */
-    $('.space-under-header')[0].style.height = (amountListElements + 1) * 60 + "px";
+    if (decision == "down") {
+        $('.space-under-header')[0].style.height = (getheaderHeight() + 1) * 60 + "px";
+    } else {
+        $('.space-under-header')[0].style.height = "60px";
+    }
 
     /* Erneut abstimmen, ob Body kleiner/groesser Display */
     fixFooter();
@@ -88,7 +81,7 @@ function changeSectionUnderHeader(decision) {
 
 function fixFooter() {
     /* Hoehe von Body und Window(Display) */
-    var bodyHeight = $(".fake-body").height() + 120; /* 120 wegen header-hoehe plus footer-hoehe */
+    var bodyHeight = $(".fake-body").height() + getheaderHeight() + 120; /* 120 wegen header-hoehe plus footer-hoehe */
     var windowHeight = $(window).height();
     /*alert("fake-body: " + bodyHeight + "\nwindow     : " + windowHeight + "\nVielleicht Problem mit Bootstrap Klassen (col-xx-xx)");*/
 
@@ -101,3 +94,17 @@ function fixFooter() {
         $("footer").css("position", "relative");
     }
 }
+
+/* Immer wenn Window-Groesse veraendert wird Footer ausrichten */
+$("body")[0].onresize = function () {
+
+    /* Wenn bspw. Dropdown menu unten und Fenster wird klein gezogen, soll auch der Content wieder nach oben */
+    if ($(window).width() >= 767) {
+        changeSectionUnderHeader("up");
+    }
+
+    /* Wenn Dropdown eigentlich unten war, fenster breiter wurde und wieder kleiner wird, soll kontent wiedre nach unten */
+    if ($(window).width() < 767 && $("#id-right")[0].className === "right-list responsive") {
+        changeSectionUnderHeader("down");
+    }
+};

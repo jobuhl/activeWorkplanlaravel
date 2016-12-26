@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Footer</title>
-</head>
-
-<body>
-
 <!--Start footer-->
 <footer>
     <ul>
@@ -33,7 +24,3 @@ include '../general/links-general.php';
 <!-- JavaScript für alle Employer Classen -->
 <!-- Header wird erst im Footer geladen, da sonst die Hoehe des fake-body nicht berechnet werden kann und aus performace gruenden -->
 <script src="../../js/general/header-footer.js"></script>
-
-</body>
-
-</html>

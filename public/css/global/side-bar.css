@@ -64,7 +64,8 @@
 
     /* ueberschrift aller Stores in Overview */
     .side-bar .headline,
-    .list .current-selected-store {
+    .list .current-selected-store,
+    .side-bar .headline {
         background: var(--main-small-header-color);
         border-bottom: 2px solid white;
     }
@@ -92,10 +93,15 @@
     background: none;
 }
 
-/*.side-bar p,*/
+.glyphicon-chevron-down {
+    color: black;
+}
+
+/*.side-bar p */
 .side-bar .input-sidebar,
 .side-bar a,
-.current-selected-store {
+.current-selected-store,
+.headline {
      width: 100%;
      display: block;
      border-bottom: 1px solid var(--main-border-color);
@@ -114,6 +120,10 @@
     .overview.side-bar > ul {
         display: block;
     }
+
+    .side-bar .headline aside:nth-child(3) {
+        display: none;
+    }
 }
 
 /* Sub-Menu wichtig muss hierarchisch aufgeschrieben bleiben*/
@@ -127,15 +137,22 @@
 }
 
 /* Wenn Cursor ueber dem Element */
-.side-bar a:hover {
+.side-bar .headline:hover,
+.side-bar a:hover,
+.current-selected-store aside:nth-child(2n+1):hover p {
     background-color: var(--main-highlight-color); /* Variable in header-footer.css deklariert */
+    color: var(--main-text-white); /* text-farbe */
+}
+
+/* auch die asides auf der seite sollen weissen text bekommen */
+.side-bar .headline:hover aside p {
     color: var(--main-text-white); /* text-farbe */
 }
 
 /* Wenn Search-Feld angeklickt */
 .side-bar input:focus {
     outline: none;
-    background: var(--main-table-background);
+    background: var(--main-small-header-color);
 }
 
 /* Unterer teil der Liste wegen ueberlappung */
@@ -143,6 +160,17 @@
     float: left;
     width: 100%;
 }
+
+.current-selected-store,
+.headline {
+    padding: 0;
+}
+.current-selected-store aside p,
+.headline aside p {
+    padding: 10px 0 10px 0px;
+    margin: 0;
+}
+
 
 /* ----------------------- A-CHANGES IN SUB-MENU ----------------------- */
 

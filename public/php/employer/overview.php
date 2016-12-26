@@ -18,7 +18,15 @@ include 'header-employer.php';
     <h2 style="display: none">fakeheading</h2>
     <br>
     <aside class="col-xs-12 col-sm-3 side-bar overview">
-        <a class="middle-bold headline">Stores</a>
+
+        <div class="row headline" draggable="true">
+            <aside class="col-xs-2 middle-bold"></aside>
+            <aside class="col-xs-8 middle-bold"><p>Stores</p></aside>
+            <aside class="col-xs-2 middle-bold">
+                    <p class="glyphicon glyphicon-chevron-down"></p>
+            </aside>
+        </div>
+
         <ul>
             <li><input class="input-sidebar" type="text" placeholder="Search Store..."></li>
             <li><a onclick="sideBarBorder()">0001 Store Konstanz</a></li>
@@ -32,7 +40,11 @@ include 'header-employer.php';
 
     <aside id="aside-overview" class="col-xs-12 col-sm-9 my-right-side overview list">
 
-        <p class="current-selected-store middle-bold">Current Store</p>
+        <div class="row current-selected-store">
+            <aside class="col-xs-2 middle-bold"><p>❮</p></aside>
+            <aside class="col-xs-8 middle-bold"><p>Current Store</p></aside>
+            <aside class="col-xs-2 middle-bold"><p>❯</p></aside>
+        </div>
         <nav class="calendar-navigation">
 
             <div class="col-xs-6 col-md-5">
