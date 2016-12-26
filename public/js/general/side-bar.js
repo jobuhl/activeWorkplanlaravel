@@ -39,3 +39,19 @@ function sideBarBorder() {
         $(".side-bar").css("border", "none");
     }
 }
+
+
+/* Wenn ein Listen-Element der Sidebar angeklickt wird */
+$('.lower-list li').click(function() {
+
+    /* Falls die Unterliste (Mitarbeiternamen) versteckt sind */
+    if($(this).children("ul").is(':hidden')) {
+
+        /* zeig die Unterliste an */
+        $(this).children("ul").show();
+    } else {
+
+        /* verstecke die Unterliste */
+        $(this).children("ul").hide();
+    }
+});

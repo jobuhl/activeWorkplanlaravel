@@ -19,11 +19,9 @@ include 'header-employer.php';
     <br>
     <aside class="col-xs-12 col-sm-3 side-bar">
 
-
         <?php
         include 'sidebar.php';
         ?>
-
 
         <br>
 
@@ -676,8 +674,8 @@ include '../employer/footer-employer.php';
 
 
 <!-- JavaScript -->
-<script src="../../js/general/side-bar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+<script src="../../js/general/side-bar.js"></script>
 
 </body>
 

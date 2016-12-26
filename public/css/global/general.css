@@ -1,6 +1,4 @@
 /* mainsection ist der graue obere Bereich auf den general Seiten */
-/* just a comment iiiii iihhhh*/
-
 .mainsection {
     height: 200px;
     background-color: var(--main-mainsection-lower-header-color);

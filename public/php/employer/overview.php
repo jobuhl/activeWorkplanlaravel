@@ -21,7 +21,7 @@ include 'header-employer.php';
         <ul>
             <li><p class="middle-bold">All Stores</p></li>
             <li><input type="text" placeholder="Search Store..."></li>
-            <li><a>0001 Store Konstanz</a></li>
+            <li><a onclick="openSidebar()">0001 Store Konstanz</a></li>
             <li><a>0002 Store München</a></li>
             <li><a>0003 Store Freiburg</a></li>
             <li><a>0004 Store Stuttgart</a></li>

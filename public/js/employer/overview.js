@@ -31,10 +31,3 @@ function overviewList() {
     /* Trennlinie zwischen side-bar und right-aside wieder einblenden */
     sideBarBorder();
 }
-
-/* der externe Aufruf des Click-Button funktioniert nicht *//*
-$("#overview-kachel").addEventListener("click", overviewKachel());
-$("#overview-list").addEventListener("click", overviewList());
-document.getElementById("overview-kachel").onclick = function() { overviewKachel() };
-document.getElementById("overview-list").onclick = function() { overviewList() };
-*/

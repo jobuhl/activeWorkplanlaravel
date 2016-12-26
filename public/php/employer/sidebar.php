@@ -22,7 +22,7 @@
     </ul>
 
     <ul class="lower-list">
-        <li><a href="planning-employer.php">0001 Store Konstanz</a>
+        <li><a href="#planning-employer.php">0001 Store Konstanz</a>
             <ul>
                 <li><a>Tim Bohnert</a></li>
                 <li><a href="planning-employer-single-employee.php">Maria Schuster</a></li>
@@ -74,7 +74,7 @@
     <!-- CSS -->
 
     <!--Store add change delete -->
-    <!-- Button der Stores hinzufügt -->
+    <!-- Button der Stores hinzufuegt -->
     <?php
     include '../employer/modal-store.php'
     ?>
