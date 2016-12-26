@@ -20,7 +20,7 @@ include 'header-employer.php';
     <aside class="col-xs-12 col-sm-3 side-bar overview">
         <a class="middle-bold headline">Stores</a>
         <ul>
-            <li><input type="text" placeholder="Search Store..."></li>
+            <li><input class="input-sidebar" type="text" placeholder="Search Store..."></li>
             <li><a onclick="sideBarBorder()">0001 Store Konstanz</a></li>
             <li><a>0002 Store München</a></li>
             <li><a>0003 Store Freiburg</a></li>
