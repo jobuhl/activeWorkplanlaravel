@@ -150,9 +150,9 @@
 }
 
 /* Wenn Search-Feld angeklickt */
-.side-bar input:focus {
+.side-bar .input-sidebar:focus {
     outline: none;
-    background: var(--main-small-header-color);
+    background: var(--main-focus-color);
 }
 
 /* Unterer teil der Liste wegen ueberlappung */
