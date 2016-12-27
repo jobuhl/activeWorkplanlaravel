@@ -61,6 +61,10 @@ $('body')[0].onresize = function () {
         /* Linie zwischen side-bar und right-side neu ausrichten */
         sideBarBorder();
     } else {
+
+        /* Side-bar unterliste (Store Auflistung) zu machen */
+        $(".overview.side-bar > ul").hide();
+
         /* Linie zwischen side-bar und right-side neu ausrichten */
         sideBarBorder();
     }

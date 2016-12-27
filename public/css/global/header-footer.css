@@ -28,6 +28,7 @@
     --main-pop-up-progress-bar-behind: #868686;
 
     /* active / focus */
+    --main-focus-color: #CFE8FD;
     --main-highlight-color: #00A9FF;
     --main-active-color: #0C8EE8; /* weil noch nicht funktioniert */
 
