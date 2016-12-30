@@ -60,8 +60,7 @@
 
     </section>
 
-
+    <script type="text/javascript" src="{{ asset('/js/general/contact.js') }}"></script>
 
 @endsection
 
-<script type="text/javascript" src="{{ asset('/js/general/contact.js') }}"></script>
