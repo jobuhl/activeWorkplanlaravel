@@ -5,23 +5,26 @@
 
 @section('content')
 
-    <section class="col-xs-12 mainsection">
-        <h2 style="display: none">fakeheading</h2>
-        <article>
-            <h2 style="display: none">fakeheading</h2>
-            <aside>
-                <img src="{{asset('gif/dataprotection.gif')}}" alt="Bild">
-            </aside>
-            <aside>
-                <h2>Data protection</h2>
-            </aside>
-        </article>
-    </section>
+
 
     <!-- Der eigentliche Content -->
-    <section class="fake-body container dataprotection">
+    <section class="fake-body  dataprotection">
+
+        <div class="col-xs-12 mainsection ">
+            <h2 style="display: none">fakeheading</h2>
+            <article>
+                <h2 style="display: none">fakeheading</h2>
+                <aside>
+                    <img src="{{asset('gif/dataprotection.gif')}}" alt="Bild">
+                </aside>
+                <aside>
+                    <h2>Data protection</h2>
+                </aside>
+            </article>
+        </div>
         <h2 style="display: none">fakeheading</h2>
 
+        <div class="container">
         <!-- Zeile 1 Content -->
         <article class="col-xs-12">
 
@@ -487,7 +490,7 @@
                 Newsletters können Sie jederzeit widerrufen , etwa über den „Austragen“-Link im Newsletter.</p>
             <p> </p>
         </article>
-
+        </div>
 
     </section>
 

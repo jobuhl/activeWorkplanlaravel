@@ -6,23 +6,25 @@
 
 @section('content')
 
-    <section class="col-xs-12 mainsection">
-        <article>
-            <aside>
-                <img src="{{asset('gif/impressum.gif')}}" alt="Bild">
-            </aside>
-            <aside>
-                <h2>Impressum</h2>
-            </aside>
-        </article>
-    </section>
+
 
 
     <!-- Der eigentliche Content -->
-    <section class="fake-body container impressum">
+    <section class="fake-body impressum">
         <h2 style="display: none">fakeheading</h2>
 
-        <article class="col-sx-12">
+        <div class="col-xs-12 mainsection">
+            <article>
+                <aside>
+                    <img src="{{asset('gif/impressum.gif')}}" alt="Bild">
+                </aside>
+                <aside>
+                    <h2>Impressum</h2>
+                </aside>
+            </article>
+        </div>
+        <div class="container">
+        <article class=" col-sx-12">
             <h2 style="display: none">fakeheading</h2>
             <h3>Angaben gemäß § 5 TMG</h3>
         </article>
@@ -132,12 +134,10 @@
                 derartige Inhalte umgehend entfernen.</p>
             <p> </p>
         </article>
-
+        </div>
     </section>
 
 
 
 
 @endsection
-
-<script type="text/javascript" src="{{ asset('/js/general/contact.js') }}"></script>

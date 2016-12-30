@@ -13,6 +13,8 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/genaral/signup.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/global/modal.css')}}">
 
+
+
     </head>
     <body>
     <header>

@@ -13,7 +13,7 @@ include 'header-general.php';
 ?>
 
 <!-- Banner -->
-<section class="col-xs-12 mainsection">
+<section class="col-xs-12 mainsection ">
     <h2 style="display: none">fakeheading</h2>
     <article>
         <h2 style="display: none">fakeheading</h2>
