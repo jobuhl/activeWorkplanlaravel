@@ -1,10 +1,11 @@
 @extends('layouts.start')
 
+<!-- wird dies überhaupt angewandt?-->
+<link rel="stylesheet" type="text/css" href="{{asset('css/general/index.css')}}">
+<!-- header -->
 @section('content')
 
-    <!-- wird dies überhaupt angewandt?-->
-    <link rel="stylesheet" type="text/css" href="{{asset('css/general/index.css')}}">
-    <!-- header -->
+
 
     <!-- Body -->
     <section class="backgroundheadindex">

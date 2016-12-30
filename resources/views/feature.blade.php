@@ -91,7 +91,7 @@
                             <!-- Item 2 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    src="{{asset('gif/month.png')}}" alt="Bild">
+                                    <img src="{{asset('gif/month.png')}}" alt="Bild">
                                 </aside>
 
                                 <aside class="col-xs-12">
@@ -109,7 +109,7 @@
                             <!-- Item 3 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    src="{{asset('gif/navigation.png')}}" alt="Bild">
+                                    <img src="{{asset('gif/navigation.png')}}" alt="Bild">
                                 </aside>
                                 <aside class="col-xs-12">
                                     <h3>Vor und zurück navigieren</h3>
@@ -143,7 +143,7 @@
                             <!-- Item 5 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    src="{{asset('gif/print.png')}}" alt="Bild">
+                                    <img  src="{{asset('gif/print.png')}}" alt="Bild">
                                 </aside>
                                 <aside class="col-xs-12">
                                     <h3>Arbeitsplan ausdrucken</h3>
@@ -160,7 +160,7 @@
                             <!-- Item 6 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    src="{{asset('gif/mail.png')}}" alt="Bild">
+                                    <img  src="{{asset('gif/mail.png')}}" alt="Bild">
 
                                 </aside>
                                 <aside class="col-xs-12">
