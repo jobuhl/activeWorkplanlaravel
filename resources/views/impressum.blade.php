@@ -1,14 +1,15 @@
 @extends('layouts.start')
 
-<link rel="stylesheet" type="text/css" href="../../css/general/impressum.css">
-<link rel="stylesheet" type="text/css" href="../../css/global/general.css">
+
+<link rel="stylesheet" type="text/css"  href="{{asset('css/general/impressum.css')}}">
+<link rel="stylesheet" type="text/css"  href="{{asset('css/global/general.css')}}">
 
 @section('content')
 
     <section class="col-xs-12 mainsection">
         <article>
             <aside>
-                <img src="../../gif/impressum.gif" alt="Bild">
+                <img src="{{asset('gif/impressum.gif')}}" alt="Bild">
             </aside>
             <aside>
                 <h2>Impressum</h2>
@@ -138,3 +139,5 @@
 
 
 @endsection
+
+<script type="text/javascript" src="{{ asset('/js/general/contact.js') }}"></script>

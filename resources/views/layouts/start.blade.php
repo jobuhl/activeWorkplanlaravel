@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>activeWorkplan</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
@@ -30,8 +30,8 @@
             </li>
         </ul>
         <ul class="right-list" id="id-right">
-            <li><a id="index" href="index.php">Home</a></li>
-            <li><a id="features" href="features.php">Features</a></li>
+            <li><a id="index" href="welcome">Home</a></li>
+            <li><a id="features" href="feature">Features</a></li>
             <li><a data-toggle="modal" data-target="#signinbutton">Sign In</a></li>
             <li><a data-toggle="modal" data-target="#signupbutton" onclick="nextStep(1)">Sign Up</a></li>
         </ul>
@@ -47,12 +47,12 @@
     <footer>
         <ul>
             <!--Link zu Dataprotection-->
-            <li><a id="dataprotection" href="../general/dataprotection.php">Dataprotection</a>
+            <li><a id="dataprotection" href="protection">Dataprotection</a>
             </li>
             <!--Link zu Impressum-->
-            <li><a id="impressum" href="../general/impressum.php">Impressum</a></li>
+            <li><a id="impressum" href="impressum">Impressum</a></li>
             <!--Link zu Contact-->
-            <li><a id="contact" href="../general/contact.php">Contact</a></li>
+            <li><a id="contact" href="contact">Contact</a></li>
         </ul>
     </footer>
     <!--end footer-->

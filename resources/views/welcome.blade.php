@@ -159,7 +159,7 @@
             </aside>
 
             <aside class="col-sm-6 col-sm-pull-6">
-                <img class="bodyimage" src="{{asset('gif/mobile.png')}}" alt="Bild">
+                <img class="bodyimage" src="{{asset('gif/mobil.png')}}" alt="Bild">
             </aside>
         </article>
 

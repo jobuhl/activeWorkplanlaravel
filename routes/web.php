@@ -15,6 +15,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/impressum', function () {
+    return view('impressum');
+});
+
+Route::get('/protection', function () {
+    return view('protection');
+});
+
+Route::get('/feature', function () {
+    return view('feature');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
