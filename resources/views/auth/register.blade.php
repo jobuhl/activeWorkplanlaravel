@@ -1,4 +1,4 @@
-
+<!-- Beispiel Code -->
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -142,21 +142,24 @@
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                         </div>
                     </div>
+
                 </form>
+                    <div class="modal-footer footer1">
+                        <div class="col-xs-12">
+                            <button type="button" class="form-control to-right next-button" ONCLICK="nextStep(2)">Next</button>
+                        </div>
+                    </div>
+
             </div>
 
-            <div class="modal-footer footer1">
-                <div class="col-xs-12">
-                    <button type="button" class="form-control to-right next-button" ONCLICK="nextStep(2)">Next</button>
-                </div>
-            </div>
+
 
             <!-- User-->
             <div class="modal-body" id="user">
                 <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                     {{ csrf_field() }}
                     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                        <label for="name" class="col-md-4 control-label">Name</label>
+                        <label for="name" class="col-md-4 control-label">Surame</label>
 
                         <div class="col-md-6">
                             <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
@@ -169,7 +172,7 @@
                         </div>
                     </div>
                     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                        <label for="name" class="col-md-4 control-label">Surame</label>
+                        <label for="name" class="col-md-4 control-label">Name</label>
 
                         <div class="col-md-6">
                             <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
@@ -195,7 +198,8 @@
 
             <!-- Company-->
             <div class="modal-body" id="company">
-                <form>
+                <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    {{ csrf_field() }}
                     <h3>Company Details</h3>
                     <p><input class="form-control" type="email" placeholder="Company name"></p>
 
@@ -205,22 +209,26 @@
                     <p><input class="form-control" type="email" placeholder="Postcode"></p>
                     <p><input class="form-control" type="email" placeholder="City"></p>
                     <p><input class="form-control" type="email" placeholder="Country"></p>
+
+                    <div class="modal-footer footer3">
+                        <div class="col-xs-6">
+                            <button id="back-button" class="form-control to-right next-button" type="button"
+                                    ONCLICK="nextStep(2)">Back
+                            </button>
+                        </div>
+                        <div class="col-xs-6">
+                        <button id="back-button" class="form-control to-right next-button" type="submit"
+                               >SignUp
+                        </button>
+
+                        </div>
+                    </div>
+
                 </form>
             </div>
 
             <!-- Modal footer-->
-            <div class="modal-footer footer3">
-                <div class="col-xs-6">
-                    <button id="back-button" class="form-control to-right next-button" type="button"
-                            ONCLICK="nextStep(2)">Back
-                    </button>
-                </div>
-                <div class="col-xs-6">
-                    <button class="form-control to-right add-button" data-toggle="modal" data-target="#signupbutton"
-                            onclick="signup()">Sign up
-                    </button>
-                </div>
-            </div>
+
         </div>
     </div>
 </div>
