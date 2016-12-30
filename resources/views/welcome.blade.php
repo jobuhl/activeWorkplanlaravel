@@ -76,7 +76,7 @@
                     beteiligen.
                 </p>
                 <p>Kalender</p>
-                <a href="features.php">Get more information</a>
+                <a href="feature">Get more information</a>
             </aside>
 
             <!-- links / unten; Pull damit colum nach oben geht-->
@@ -98,7 +98,7 @@
                 </p>
                 <p>Kalender, Wochenansicht, Monatsansicht, Vor und zurück navigieren, zum heutigen Tag springen, Arbeitsplan
                     ausdrucken, Arbeitsplan per Email</p>
-                <a href="features.php">Get more information</a>
+                <a href="feature">Get more information</a>
             </aside>
 
             <!-- rechts -->
@@ -118,7 +118,7 @@
                 </p>
                 <p>Arbeitsvorschläge eintragen, Urlaub beantragen, Krankmeldung, Seminare, Schulung, private Termine,
                     Studium (Arbeitgeber kann weitere Event-Typen hinzufügen)</p>
-                <a href="features.php">Get more information</a>
+                <a href="feature">Get more information</a>
             </aside>
 
             <aside class="col-sm-6 col-sm-pull-6">
@@ -138,7 +138,7 @@
                     fairen und optimalen Arbeitsplan.
                 </p>
                 <p>auf oberen verlinken Selbsteinteilung de Arbeitszeit</p>
-                <a href="features.php">Get more information</a>
+                <a href="feature">Get more information</a>
             </aside>
 
             <!-- rechts -->
@@ -156,7 +156,7 @@
                     Smartphone oder Tablet bedienen. Wo immer sie sind und genau dann, wenn Sie es brauchen.
                 </p>
                 <p>Optimierte Darstellung für Smartphone, Tablet und PC</p>
-                <a href="features.php">Get more information</a>
+                <a href="feature">Get more information</a>
             </aside>
 
             <aside class="col-sm-6 col-sm-pull-6">
@@ -175,7 +175,7 @@
                     mal wieder dran glauben und einspringen? activeWorkplan meldet Ihnen, falls Ihre vertraglich
                     vereinbarten Wochenstunden erreicht sind.
                 </p>
-                <a href="features.php">Get more information</a>
+                <a href="feature">Get more information</a>
             </aside>
 
             <!-- rechts -->
@@ -195,7 +195,7 @@
                     und intuitive Bedienung möglich, beliebig viele Mitarbeiter und Filialen zu registieren, ohne
                     dass diese einen Finger rühren müssen.
                 </p>
-                <a href="features.php">Get more information</a>
+                <a href="feature">Get more information</a>
             </aside>
 
             <!--  rechts -->
