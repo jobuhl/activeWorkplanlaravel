@@ -1,4 +1,4 @@
-@extends('layouts.start')
+@extends('layouts.general-start')
 
 <!-- wird dies überhaupt angewandt?-->
 <link rel="stylesheet" type="text/css" href="{{asset('css/general/index.css')}}">
@@ -76,7 +76,7 @@
                     beteiligen.
                 </p>
                 <p>Kalender</p>
-                <a href="feature">Get more information</a>
+               <a href="feature">Get more information</a>
             </aside>
 
             <!-- links / unten; Pull damit colum nach oben geht-->
@@ -230,18 +230,6 @@
             <aside class="col-md-2"></aside>
         </article>
     </section>
-
-
-
-
-
-
-
-    <!-- footer -->
-
-
-    <!-- CSS -->
-
 
 
 @endsection

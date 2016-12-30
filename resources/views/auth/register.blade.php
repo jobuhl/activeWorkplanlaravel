@@ -318,10 +318,10 @@
             <!-- Modal body-->
             <!-- Basic-->
             <div class="modal-body">
-                <a href="../employer/overview.php"> klick for Employer/Admin Webside</a>
+                <a href="employer-overview"> click for Employer/Admin Webside</a>
                 <br>
                 <br>
-                <a href="../employee/workplan.php"> klick for Employee/User Webside</a>
+                <a href="employee-workplan"> click for Employee/User Webside</a>
             </div>
             <!-- Modal footer-->
         </div>

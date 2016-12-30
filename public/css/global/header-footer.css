@@ -47,6 +47,10 @@
     color: var(--main-text-black);
 }
 
+body {
+    background-color: white;
+}
+
 .space-under-header {
     height: 60px;
 }

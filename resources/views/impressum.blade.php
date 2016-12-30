@@ -1,4 +1,4 @@
-@extends('layouts.start')
+@extends('layouts.general-start')
 
 
 <link rel="stylesheet" type="text/css"  href="{{asset('css/general/impressum.css')}}">

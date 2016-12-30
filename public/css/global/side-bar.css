@@ -164,6 +164,7 @@
 .current-selected-store,
 .headline {
     padding: 0;
+    margin: 0;
 }
 .current-selected-store aside p,
 .headline aside p {
