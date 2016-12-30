@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <!-- Page name -->
-    <title>activeWorkplan/Impressum</title>
+@extends('layouts.start')
 
-</head>
+<link rel="stylesheet" type="text/css" href="../../css/general/impressum.css">
+<link rel="stylesheet" type="text/css" href="../../css/global/general.css">
 
-<body>
+@section('content')
 
-<!-- header -->
-<?php
-include 'header-general.php';
-?>
-
-<!--body-->
-
-<!-- oben -->
-<section class="col-xs-12 mainsection">
-    <article>
-        <aside>
-            <img src="../../gif/impressum.gif" alt="Bild">
-        </aside>
-        <aside>
-            <h2>Impressum</h2>
-        </aside>
-    </article>
-</section>
+    <section class="col-xs-12 mainsection">
+        <article>
+            <aside>
+                <img src="../../gif/impressum.gif" alt="Bild">
+            </aside>
+            <aside>
+                <h2>Impressum</h2>
+            </aside>
+        </article>
+    </section>
 
 
-<!-- Der eigentliche Content -->
-<section class="fake-body container impressum">
-    <h2 style="display: none">fakeheading</h2>
+    <!-- Der eigentliche Content -->
+    <section class="fake-body container impressum">
+        <h2 style="display: none">fakeheading</h2>
 
         <article class="col-sx-12">
             <h2 style="display: none">fakeheading</h2>
@@ -148,19 +137,4 @@ include 'header-general.php';
 
 
 
-
-
-
-
-<!-- footer -->
-<?php
-include 'footer-general.php';
-?>
-
-<!-- CSS -->
-
-</body>
-
-</html>
-
-
+@endsection
