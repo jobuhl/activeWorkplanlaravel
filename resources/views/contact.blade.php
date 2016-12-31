@@ -15,7 +15,7 @@
             <article>
                 <h2 style="display: none">fakeheading</h2>
                 <aside>
-                    <img src="{{asset('gif/contact.gif')}}" alt="Bild">
+                    <img src="{{asset('img/contact.gif')}}" alt="Bild">
                 </aside>
                 <aside>
                     <h2>Contact</h2>

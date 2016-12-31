@@ -18,6 +18,7 @@ class CreateContract extends Migration
             $table->integer('periode_of_agreement');
             $table->integer('working_hours');
             $table->string('classificaiton');
+
             $table->timestamps();
         });
     }

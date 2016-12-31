@@ -2,7 +2,7 @@
     <ul class="left-list" id="id-left">
         <li class="nav-image">
             <a href="welcome">
-                <img class="nav-logo" src="{{asset('gif/imagelogo.gif')}}" alt="Logo">
+                <img class="nav-logo" src="{{asset('img/imagelogo.gif')}}" alt="Logo">
             </a>
         </li>
         <li class="nav-placeholder">
@@ -14,7 +14,7 @@
     </ul>
     <ul class="right-list" id="id-right">
         <li><a id="welcome" href="welcome">Home</a></li>
-        <li><a id="features" href="feature">Features</a></li>
+        <li><a id="feature" href="feature">Features</a></li>
         @if (Auth::guest())
             <li><a data-toggle="modal" data-target="#signinbutton">Sign In</a></li>
             <li><a data-toggle="modal" data-target="#signupbutton" onclick="nextStep(1)">Sign Up</a></li>

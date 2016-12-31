@@ -2,7 +2,7 @@
     <ul class="left-list" id="id-left">
         <li class="nav-image">
             <a href="employer-overview">
-                <img class="nav-logo" src="{{asset('gif/imagelogo.gif')}}" alt="Logo">
+                <img class="nav-logo" src="{{asset('img/imagelogo.gif')}}" alt="Logo">
             </a>
         </li>
         <li class="nav-placeholder">

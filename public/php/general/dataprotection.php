@@ -18,7 +18,7 @@ include 'header-general.php';
     <article>
         <h2 style="display: none">fakeheading</h2>
         <aside>
-            <img src="../../gif/dataprotection.gif" alt="Bild">
+            <img src="../../img/dataprotection.gif" alt="Bild">
         </aside>
         <aside>
             <h2>Data protection</h2>

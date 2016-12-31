@@ -6,13 +6,14 @@
 @section('content')
 
 
-
+    <a href="employer-overview">Employer</a>
+    <a href="employee-workplan">Employee</a>
     <!-- Body -->
     <section class="backgroundheadindex">
         <h2 style="display: none">fakeheading</h2>
 
         <aside class="col-xs-12 col-sm-6 index-image-aside my-hidden-small">
-            <img class="my-center index-image-logo" src="{{asset('gif/imagelogo.gif')}}" alt="Bild">
+            <img class="my-center index-image-logo" src="{{asset('img/imagelogo.gif')}}" alt="Bild">
 
 
         </aside>
@@ -81,7 +82,7 @@
 
             <!-- links / unten; Pull damit colum nach oben geht-->
             <aside class="col-sm-6 col-sm-pull-6">
-                <img class="bodyimage" src="{{asset('gif/workplan.png')}}" alt="Bild">
+                <img class="bodyimage" src="{{asset('img/workplan.png')}}" alt="Bild">
             </aside>
         </article>
 
@@ -103,7 +104,7 @@
 
             <!-- rechts -->
             <aside class="col-sm-6">
-                <img class="bodyimage"src="{{asset('gif/month.png')}}" alt="Bild">
+                <img class="bodyimage"src="{{asset('img/month.png')}}" alt="Bild">
             </aside>
         </article>
 
@@ -122,7 +123,7 @@
             </aside>
 
             <aside class="col-sm-6 col-sm-pull-6">
-                <img class="bodyimage" src="{{asset('gif/planning.png')}}" alt="Bild">
+                <img class="bodyimage" src="{{asset('img/planning.png')}}" alt="Bild">
             </aside>
         </article>
 
@@ -143,7 +144,7 @@
 
             <!-- rechts -->
             <aside class="col-sm-6">
-                <img class="bodyimage" src="{{asset('gif/week.png')}}" alt="Bild">
+                <img class="bodyimage" src="{{asset('img/overview.png')}}" alt="Bild">
             </aside>
         </article>
 
@@ -160,7 +161,7 @@
             </aside>
 
             <aside class="col-sm-6 col-sm-pull-6">
-                <img class="bodyimage" src="{{asset('gif/mobil.png')}}" alt="Bild">
+                <img class="bodyimage" src="{{asset('img/mobil.png')}}" alt="Bild">
             </aside>
         </article>
 
@@ -180,7 +181,7 @@
 
             <!-- rechts -->
             <aside class="col-sm-6">
-                <img class="bodyimage" src="{{asset('gif/seminar.png')}}" alt="Bild">
+                <img class="bodyimage" src="{{asset('img/seminar.png')}}" alt="Bild">
             </aside>
         </article>
 
@@ -200,7 +201,7 @@
 
             <!--  rechts -->
             <aside class="col-sm-6 col-sm-pull-6">
-                <img class="bodyimage" src="{{asset('gif/sign-up.png')}}" alt="Bild">
+                <img class="bodyimage" src="{{asset('img/sign-up.png')}}" alt="Bild">
             </aside>
         </article>
 

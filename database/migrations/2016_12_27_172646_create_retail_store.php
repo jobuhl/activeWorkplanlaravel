@@ -19,6 +19,9 @@ class CreateRetailStore extends Migration
             $table->string('adressid');
 
             $table->timestamps();
+
+            $table->integer('company_id')->unsigned();
+            $table->foreign('company_id')->references('id')->on('company');
         });
     }
 

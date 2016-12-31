@@ -16,7 +16,14 @@ class CreateCompany extends Migration
         Schema::create('company', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+
             $table->timestamps();
+
+            $table->integer('admin_id')->unsigned();
+            $table->foreign('admin_id')->references('id')->on('admin');
+
+            $table->integer('address_id')->unsigned();
+            $table->foreign('address_id')->references('id')->on('address');
         });
     }
 

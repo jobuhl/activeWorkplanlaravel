@@ -18,7 +18,7 @@
                 <article>
                     <h2 style="display: none">fakeheading</h2>
                     <aside>
-                        <img src="{{asset('gif/features.gif')}}" alt="Bild">
+                        <img src="{{asset('img/features.gif')}}" alt="Bild">
                     </aside>
                     <aside>
                         <h2>Features</h2>
@@ -45,7 +45,7 @@
                         eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                         est Lorem ipsum
                         dolor sit amet.</p>
-                    <img src="{{asset('gif/overview.png')}}" alt="Bild">
+                    <img src="{{asset('img/month.png')}}" alt="Bild">
                 </article>
                 <br>
 
@@ -73,7 +73,7 @@
                             <!-- Item 1 -->
                             <div class="item active">
                                 <aside class="col-xs-12">
-                                    <img src="{{asset('gif/week.png')}}" alt="Bild">
+                                    <img src="{{asset('img/week.png')}}" alt="Bild">
                                 </aside>
 
                                 <aside class="col-xs-12">
@@ -91,7 +91,7 @@
                             <!-- Item 2 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    <img src="{{asset('gif/month.png')}}" alt="Bild">
+                                    <img src="{{asset('img/month.png')}}" alt="Bild">
                                 </aside>
 
                                 <aside class="col-xs-12">
@@ -109,7 +109,7 @@
                             <!-- Item 3 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    <img src="{{asset('gif/navigation.png')}}" alt="Bild">
+                                    <img src="{{asset('img/navigation.png')}}" alt="Bild">
                                 </aside>
                                 <aside class="col-xs-12">
                                     <h3>Vor und zurück navigieren</h3>
@@ -126,7 +126,7 @@
                             <!-- Item 4 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    <img src="../../gif/navigation.png" alt="Bild">
+                                    <img src="{{asset('img/navigation.png')}}" alt="Bild">
                                 </aside>
                                 <aside class="col-xs-12">
                                     <h3>zum heutigen Tag springen</h3>
@@ -143,7 +143,7 @@
                             <!-- Item 5 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    <img  src="{{asset('gif/print.png')}}" alt="Bild">
+                                    <img  src="{{asset('img/print.png')}}" alt="Bild">
                                 </aside>
                                 <aside class="col-xs-12">
                                     <h3>Arbeitsplan ausdrucken</h3>
@@ -160,7 +160,7 @@
                             <!-- Item 6 -->
                             <div class="item">
                                 <aside class="col-xs-12">
-                                    <img  src="{{asset('gif/mail.png')}}" alt="Bild">
+                                    <img  src="{{asset('img/mail.png')}}" alt="Bild">
 
                                 </aside>
                                 <aside class="col-xs-12">
@@ -197,7 +197,7 @@
                 <article class="row">
                     <h5>Verantwortung</h5>
                     <h3>Selbsteinteilung der Arbeitszeit</h3>
-                    <img src="{{asset('gif/workplan.png')}}" alt="Bild">
+                    <img src="{{asset('img/workplan.png')}}" alt="Bild">
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                         invidunt
                         ut
@@ -233,7 +233,7 @@
                             gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                     </aside>
                     <aside class="col-sm-6 col-xs-12">
-                        <img src="{{asset('gif/events.png')}}" alt="Bild">
+                        <img src="{{asset('img/events.png')}}" alt="Bild">
                     </aside>
                 </article>
                 <br>
@@ -246,7 +246,7 @@
                         magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                         Stet clita kasd
                         gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <img src="{{asset('gif/seminar.png')}}" alt="Bild">
+                    <img src="{{asset('img/seminar.png')}}" alt="Bild">
                 </article>
                 <br>
 
@@ -298,7 +298,7 @@
                             gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                     </aside>
                     <aside class="col-xs-12 col-sm-6">
-                        <img src="{{asset('gif/amount.png')}}" alt="Bild">
+                        <img src="{{asset('img/amount.png')}}" alt="Bild">
                     </aside>
                 </article>
                 <br>

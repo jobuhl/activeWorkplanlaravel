@@ -3,7 +3,7 @@
     <ul class="left-list" id="id-left">
         <li class="nav-image">
             <a href="index.php">
-                <img class="nav-logo" src="../../gif/imagelogo.gif" alt="Logo">
+                <img class="nav-logo" src="../../img/imagelogo.gif" alt="Logo">
             </a>
         </li>
         <li class="nav-placeholder">

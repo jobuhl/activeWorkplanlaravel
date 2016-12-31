@@ -16,7 +16,7 @@
         <div class="col-xs-12 mainsection">
             <article>
                 <aside>
-                    <img src="{{asset('gif/impressum.gif')}}" alt="Bild">
+                    <img src="{{asset('img/impressum.gif')}}" alt="Bild">
                 </aside>
                 <aside>
                     <h2>Impressum</h2>

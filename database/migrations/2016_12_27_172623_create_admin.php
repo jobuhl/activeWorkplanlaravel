@@ -19,6 +19,7 @@ class CreateAdmin extends Migration
             $table->string('surname');
             $table->string('email')->unique();
             $table->string('password');
+
             $table->timestamps();
         });
     }

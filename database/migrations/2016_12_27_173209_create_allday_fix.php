@@ -17,7 +17,11 @@ class CreateAlldayFix extends Migration
             $table->increments('id');
             $table->date('date');
             $table->string('name');
+
             $table->timestamps();
+
+            $table->integer('employee_id')->unsigned();
+            $table->foreign('employee_id')->references('id')->on('employee');
         });
     }
 

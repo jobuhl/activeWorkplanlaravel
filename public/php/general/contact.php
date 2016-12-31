@@ -27,7 +27,7 @@ include 'header-general.php';
         <article>
             <h2 style="display: none">fakeheading</h2>
             <aside>
-                <img src="../../gif/contact.gif" alt="Bild">
+                <img src="../../img/contact.gif" alt="Bild">
             </aside>
             <aside>
                 <h2>Contact</h2>

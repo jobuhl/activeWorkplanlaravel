@@ -19,7 +19,7 @@ include 'header-general.php';
 <section class="col-xs-12 mainsection">
     <article>
         <aside>
-            <img src="../../gif/impressum.gif" alt="Bild">
+            <img src="../../img/impressum.gif" alt="Bild">
         </aside>
         <aside>
             <h2>Impressum</h2>

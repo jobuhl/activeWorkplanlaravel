@@ -10,7 +10,7 @@
 <header>
     <ul class="left-list" id="id-left">
         <li class="nav-image"><a href="workplan.php">
-                <img class="nav-logo" src="../../gif/imagelogo.gif" alt="Logo"></a>
+                <img class="nav-logo" src="../../img/imagelogo.gif" alt="Logo"></a>
         </li>
         <li class="nav-placeholder"><a id="nav-placeholder-text">Account</a></li>
         <li class="nav-toggle">

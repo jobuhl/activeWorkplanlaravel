@@ -17,7 +17,11 @@ class CreateLocation extends Migration
             $table->increments('id');
             $table->string('postcode');
             $table->string('name');
+
             $table->timestamps();
+
+            $table->integer('country_id')->unsigned();
+            $table->foreign('country_id')->references('id')->on('country');
         });
     }
 

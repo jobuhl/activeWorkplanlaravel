@@ -24,7 +24,7 @@ include 'header-general.php';
             <article>
                 <h2 style="display: none">fakeheading</h2>
                 <aside>
-                    <img src="../../gif/features.gif" alt="Bild">
+                    <img src="../../img/features.gif" alt="Bild">
                 </aside>
                 <aside>
                     <h2>Features</h2>
@@ -51,7 +51,7 @@ include 'header-general.php';
                     eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
                     est Lorem ipsum
                     dolor sit amet.</p>
-                <img src="../../gif/overview.png" alt="Bild">
+                <img src="../../img/overview.png" alt="Bild">
             </article>
             <br>
 
@@ -79,7 +79,7 @@ include 'header-general.php';
                         <!-- Item 1 -->
                         <div class="item active">
                             <aside class="col-xs-12">
-                                <img src="../../gif/week.png" alt="Bild">
+                                <img src="../../img/week.png" alt="Bild">
                             </aside>
 
                             <aside class="col-xs-12">
@@ -97,7 +97,7 @@ include 'header-general.php';
                         <!-- Item 2 -->
                         <div class="item">
                             <aside class="col-xs-12">
-                                <img src="../../gif/month.png" alt="Bild">
+                                <img src="../../img/month.png" alt="Bild">
                             </aside>
 
                             <aside class="col-xs-12">
@@ -115,7 +115,7 @@ include 'header-general.php';
                         <!-- Item 3 -->
                         <div class="item">
                             <aside class="col-xs-12">
-                                <img src="../../gif/navigation.png" alt="Bild">
+                                <img src="../../img/navigation.png" alt="Bild">
                             </aside>
                             <aside class="col-xs-12">
                                 <h3>Vor und zurück navigieren</h3>
@@ -132,7 +132,7 @@ include 'header-general.php';
                         <!-- Item 4 -->
                         <div class="item">
                             <aside class="col-xs-12">
-                                <img src="../../gif/navigation.png" alt="Bild">
+                                <img src="../../img/navigation.png" alt="Bild">
                             </aside>
                             <aside class="col-xs-12">
                                 <h3>zum heutigen Tag springen</h3>
@@ -149,7 +149,7 @@ include 'header-general.php';
                         <!-- Item 5 -->
                         <div class="item">
                             <aside class="col-xs-12">
-                                <img src="../../gif/print.png" alt="Bild">
+                                <img src="../../img/print.png" alt="Bild">
                             </aside>
                             <aside class="col-xs-12">
                                 <h3>Arbeitsplan ausdrucken</h3>
@@ -166,7 +166,7 @@ include 'header-general.php';
                         <!-- Item 6 -->
                         <div class="item">
                             <aside class="col-xs-12">
-                                <img src="../../gif/mail.png" alt="Bild">
+                                <img src="../../img/mail.png" alt="Bild">
 
                             </aside>
                             <aside class="col-xs-12">
@@ -203,7 +203,7 @@ include 'header-general.php';
             <article class="row">
                 <h5>Verantwortung</h5>
                 <h3>Selbsteinteilung der Arbeitszeit</h3>
-                <img src="../../gif/workplan.png" alt="Bild">
+                <img src="../../img/workplan.png" alt="Bild">
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunt
                     ut
@@ -239,7 +239,7 @@ include 'header-general.php';
                         gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </aside>
                 <aside class="col-sm-6 col-xs-12">
-                    <img src="../../gif/events.png" alt="Bild" style="width: 50%;">
+                    <img src="../../img/events.png" alt="Bild" style="width: 50%;">
                 </aside>
             </article>
             <br>
@@ -252,7 +252,7 @@ include 'header-general.php';
                     magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                     Stet clita kasd
                     gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                <img src="../../gif/seminar.png" alt="Bild">
+                <img src="../../img/seminar.png" alt="Bild">
             </article>
             <br>
 
@@ -304,7 +304,7 @@ include 'header-general.php';
                         gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </aside>
                 <aside class="col-xs-12 col-sm-6">
-                    <img src="../../gif/amount.png" alt="Bild">
+                    <img src="../../img/amount.png" alt="Bild">
                 </aside>
             </article>
             <br>

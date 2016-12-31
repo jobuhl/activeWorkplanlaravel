@@ -18,7 +18,7 @@ include 'header-general.php';
     <h2 style="display: none">fakeheading</h2>
 
     <aside class="col-xs-12 col-sm-6 index-image-aside my-hidden-small">
-        <img class="my-center index-image-logo" src="../../gif/imagelogo.gif" alt="Bild">
+        <img class="my-center index-image-logo" src="../../img/imagelogo.gif" alt="Bild">
     </aside>
 
 
@@ -85,7 +85,7 @@ include 'header-general.php';
 
         <!-- links / unten; Pull damit colum nach oben geht-->
         <aside class="col-sm-6 col-sm-pull-6">
-            <img class="bodyimage" src="../../gif/workplan.png" alt="Bild">
+            <img class="bodyimage" src="../../img/workplan.png" alt="Bild">
         </aside>
     </article>
 
@@ -107,7 +107,7 @@ include 'header-general.php';
 
         <!-- rechts -->
         <aside class="col-sm-6">
-            <img class="bodyimage" src="../../gif/month.png" alt="Bild">
+            <img class="bodyimage" src="../../img/month.png" alt="Bild">
         </aside>
     </article>
 
@@ -126,7 +126,7 @@ include 'header-general.php';
         </aside>
 
         <aside class="col-sm-6 col-sm-pull-6">
-            <img class="bodyimage" src="../../gif/planning.png" alt="Bild">
+            <img class="bodyimage" src="../../img/planning.png" alt="Bild">
         </aside>
     </article>
 
@@ -147,7 +147,7 @@ include 'header-general.php';
 
         <!-- rechts -->
         <aside class="col-sm-6">
-            <img class="bodyimage" src="../../gif/week.png" alt="Bild">
+            <img class="bodyimage" src="../../img/week.png" alt="Bild">
         </aside>
     </article>
 
@@ -164,7 +164,7 @@ include 'header-general.php';
         </aside>
 
         <aside class="col-sm-6 col-sm-pull-6">
-            <img class="bodyimage" src="../../gif/mobil.png" alt="Bild">
+            <img class="bodyimage" src="../../img/mobil.png" alt="Bild">
         </aside>
     </article>
 
@@ -184,7 +184,7 @@ include 'header-general.php';
 
         <!-- rechts -->
         <aside class="col-sm-6">
-            <img class="bodyimage" src="../../gif/seminar.png" alt="Bild">
+            <img class="bodyimage" src="../../img/seminar.png" alt="Bild">
         </aside>
     </article>
 
@@ -204,7 +204,7 @@ include 'header-general.php';
 
         <!--  rechts -->
         <aside class="col-sm-6 col-sm-pull-6">
-            <img class="bodyimage" src="../../gif/sign-up.png" alt="Bild">
+            <img class="bodyimage" src="../../img/sign-up.png" alt="Bild">
         </aside>
     </article>
 

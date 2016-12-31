@@ -18,8 +18,15 @@ class CreateEmployee extends Migration
             $table->string('forename');
             $table->string('surname');
             $table->string('email')->unique();
-            $table->timestamps();
             $table->string('password');
+
+            $table->timestamps();
+
+            $table->integer('retail_store_id')->unsigned();
+            $table->foreign('retail_store_id')->references('id')->on('retail_store');
+
+            $table->integer('contract_id')->unsigned();
+            $table->foreign('contract_id')->references('id')->on('contract');
         });
     }
 

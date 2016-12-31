@@ -18,7 +18,11 @@ class CreateEmployeePerHour extends Migration
             $table->date('date');
             $table->string('start');
             $table->string('end');
+
             $table->timestamps();
+
+            $table->integer('retail_store_id')->unsigned();
+            $table->foreign('retail_store_id')->references('id')->on('retail_store');
         });
     }
 

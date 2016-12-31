@@ -17,8 +17,12 @@ class CreateWorktimeFix extends Migration
             $table->increments('id');
             $table->date('date');
             $table->string('from');
-            $table->string('to');;
+            $table->string('to');
+
             $table->timestamps();
+
+            $table->integer('employee_id')->unsigned();
+            $table->foreign('employee_id')->references('id')->on('employee');
         });
     }
 

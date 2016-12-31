@@ -16,7 +16,11 @@ class CreateRole extends Migration
         Schema::create('role', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+
             $table->timestamps();
+
+            $table->integer('contract_id')->unsigned();
+            $table->foreign('contract_id')->references('id')->on('contract');
         });
     }
 
