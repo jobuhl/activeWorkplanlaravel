@@ -16,8 +16,8 @@
         <li><a id="welcome" href="welcome">Home</a></li>
         <li><a id="features" href="feature">Features</a></li>
         @if (Auth::guest())
-            <li><a href="{{ url('/login') }}">Login</a></li>
-            <li><a href="{{ url('/register') }}">Register</a></li>
+            <li><a data-toggle="modal" data-target="#signinbutton">Sign In</a></li>
+            <li><a data-toggle="modal" data-target="#signupbutton" onclick="nextStep(1)">Sign Up</a></li>
         @else
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -39,8 +39,7 @@
                 </ul>
             </li>
         @endif
-        <li><a data-toggle="modal" data-target="#signinbutton">Sign In</a></li>
-        <li><a data-toggle="modal" data-target="#signupbutton" onclick="nextStep(1)">Sign Up</a></li>
+
     </ul>
 </header>
 
