@@ -11,6 +11,7 @@
 |
 */
 
+// ------------------------ general ------------------------
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,6 +20,12 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Route::get('/feature', function () {
+    return view('feature');
+});
+
+
+// ------------------------ Footer ------------------------
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -31,10 +38,8 @@ Route::get('/protection', function () {
     return view('protection');
 });
 
-Route::get('/feature', function () {
-    return view('feature');
-});
 
+// ------------------------ Employer ------------------------
 Route::get('/employer-overview', function () {
     return view('employer-overview');
 });
@@ -49,6 +54,20 @@ Route::get('/employer-account', function () {
 
 Route::get('/employer-planning-single-employee', function () {
     return view('employer-planning-single-employee');
+});
+
+
+// ------------------------ Employee ------------------------
+Route::get('/employee-workplan', function () {
+    return view('employee-workplan');
+});
+
+Route::get('/employee-planning', function () {
+    return view('employee-planning');
+});
+
+Route::get('/employee-account', function () {
+    return view('employee-account');
 });
 
 

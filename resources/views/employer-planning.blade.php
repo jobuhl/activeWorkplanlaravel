@@ -14,9 +14,7 @@
         <aside class="col-xs-12 col-sm-3 side-bar">
 
 
-            <!-- sidebar includes -->
-            <p>hier kommt die sidebar rein</p>
-            <br>
+            @include('includes.side-bar-employer-planning')
 
         </aside>
 
