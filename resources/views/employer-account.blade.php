@@ -1,7 +1,8 @@
 @extends('layouts.employer-start')
 
-<!-- CSS -->
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-account.css')}}">
+@section('css')
+    <link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-account.css')}}">
+@endsection
 
 @section('content')
 

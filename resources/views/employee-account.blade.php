@@ -1,7 +1,8 @@
 @extends('layouts.employee-start')
 
-<!-- CSS -->
+@section('css')
 <link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-account.css')}}">
+@endsection
 
 @section('content')
 
@@ -332,7 +333,5 @@
             </div>
         </div>
     </div>
-
-
 @endsection
 

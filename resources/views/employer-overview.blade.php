@@ -1,10 +1,11 @@
 @extends('layouts.employer-start')
 
-<!-- CSS -->
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-calendar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/side-bar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-calendar-navigation.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/employer/overview.css')}}">
+@section('css')
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/table-calendar.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/side-bar.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/table-calendar-navigation.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/employer/overview.css')}}">
+@endsection
 
 @section('content')
 
@@ -937,10 +938,10 @@
         </aside>
 
     </section>
+@endsection
 
-    <!-- JavaScript -->
-    <script src="{{asset('js/general/side-bar.js')}}" ></script>
-    <script src="{{asset('js/employer/overview')}}" ></script>
-
+@section('js')
+    <script src="{{asset('js/general/side-bar.js')}}"></script>
+    <script src="{{asset('js/employer/overview')}}"></script>
 @endsection
 

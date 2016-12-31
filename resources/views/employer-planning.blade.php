@@ -1,9 +1,10 @@
 @extends('layouts.employer-start')
 
-<!-- CSS -->
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-calendar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/side-bar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-calendar-navigation.css')}}">
+@section('css')
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/table-calendar.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/side-bar.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/table-calendar-navigation.css')}}">
+@endsection
 
 @section('content')
 
@@ -651,10 +652,11 @@
 
     </section>
 
-    <!-- JavaScript -->
-    <script src="{{asset('js/general/side-bar.js')}}" ></script>
+@endsection
+
+@section('js')
+    <script src="{{asset('js/general/side-bar.js')}}"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
-
 @endsection
 

@@ -1,12 +1,13 @@
 @extends('layouts.employee-start')
 
-<!-- CSS -->
-<!--<link rel='stylesheet' href='../../calendar/lib/cupertino/jquery-ui.min.css'/>-->
-<link rel="stylesheet" type="text/css"  href="{{asset('calendar/fullcalendar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('calendar/fullcalendar.print.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/employee/planning-employee.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/side-bar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/header-footer.css')}}">
+@section('css')
+    <!--<link rel='stylesheet' href='../../calendar/lib/cupertino/jquery-ui.min.css'/>-->
+    <link rel="stylesheet" type="text/css"  href="{{asset('calendar/fullcalendar.css')}}">
+    <link rel="stylesheet" type="text/css"  href="{{asset('calendar/fullcalendar.print.css')}}">
+    <link rel="stylesheet" type="text/css"  href="{{asset('css/employee/planning-employee.css')}}">
+    <link rel="stylesheet" type="text/css"  href="{{asset('css/global/side-bar.css')}}">
+    <link rel="stylesheet" type="text/css"  href="{{asset('css/global/header-footer.css')}}">
+@endsection
 
 @section('content')
 
@@ -40,7 +41,9 @@
 
     </section>
 
-    <!-- JavaScript -->
+@endsection
+
+@section('js')
     <script type="text/javascript" src="{{ asset('calendar/lib/moment.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('calendar/lib/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('calendar/lib/jquery-ui.min.js') }}"></script>
@@ -49,8 +52,4 @@
 
     <!-- Kopie, weil Calendar.js-Dateien die Datei überschrieben haben -->
     <script type="text/javascript" src="{{ asset('js/general/header-footer.js') }}"></script>
-
-
-
 @endsection
-

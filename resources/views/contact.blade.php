@@ -1,8 +1,9 @@
 @extends('layouts.general-start')
 
+@section('css')
 <link rel="stylesheet" type="text/css"  href="{{asset('css/global/general.css')}}">
 <link rel="stylesheet" type="text/css"  href="{{asset('css/general/contact.css')}}">
-
+@endsection
 
 @section('content')
 
@@ -59,8 +60,9 @@
         </section>
 
     </section>
+@endsection
 
+@section('js')
     <script type="text/javascript" src="{{ asset('/js/general/contact.js') }}"></script>
-
 @endsection
 

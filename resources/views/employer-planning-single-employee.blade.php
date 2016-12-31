@@ -1,10 +1,11 @@
 @extends('layouts.employer-start')
 
-<!-- CSS -->
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-calendar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/side-bar.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-calendar-navigation.css')}}">
-<link rel="stylesheet" type="text/css"  href="{{asset('css/global/table-account.css')}}">
+@section('css')
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/table-calendar.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/side-bar.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/table-calendar-navigation.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global/table-account.css')}}">
+@endsection
 
 @section('content')
 
@@ -107,7 +108,8 @@
 
             <br>
 
-            <button class="form-control to-right yellow" type="submit" data-toggle="modal" data-target="#change-button-emp-2">
+            <button class="form-control to-right yellow" type="submit" data-toggle="modal"
+                    data-target="#change-button-emp-2">
                 Change
             </button>
 
@@ -182,7 +184,8 @@
 
             </table>
 
-            <button class="form-control to-right red" type="submit" data-toggle="modal" data-target="#delete-button-emp-single-3">
+            <button class="form-control to-right red" type="submit" data-toggle="modal"
+                    data-target="#delete-button-emp-single-3">
                 Delete
             </button>
 
@@ -230,12 +233,11 @@
         </aside>
 
     </section>
+@endsection
 
-
-    <!-- JavaScript -->
-    <script src="{{asset('js/general/side-bar.js')}}" ></script>
+@section('js')
+    <script src="{{asset('js/general/side-bar.js')}}"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
-
 @endsection
 
