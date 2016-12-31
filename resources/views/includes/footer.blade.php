@@ -8,4 +8,5 @@
         <!--Link zu Contact-->
         <li><a id="contact" href="contact">Contact</a></li>
     </ul>
+
 </footer>

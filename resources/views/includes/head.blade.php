@@ -5,7 +5,8 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>activeWorkplan</title>
+    <title>{{ config('app.name', 'activeWorkplan') }}</title>
+
 
     <!-- CSS -->
     <!-- Fonts -->
@@ -15,11 +16,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/general/dataprotection.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/global/modal.css')}}">
 
-    <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
     <script>
