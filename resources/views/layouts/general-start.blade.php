@@ -8,7 +8,11 @@
 
 
         @include('auth.register')
+
         <!--Start Sign up-->
+        @include('auth.login')
+
+
         <!-- wird über Button click im header (Sign up) aufgerufen -->
 
         @yield('content')
