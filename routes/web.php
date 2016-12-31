@@ -54,4 +54,4 @@ Route::get('/employer-planning-single-employee', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/welcome', 'HomeController@index');
