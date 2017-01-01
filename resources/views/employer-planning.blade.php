@@ -15,7 +15,7 @@
         <aside class="col-xs-12 col-sm-3 side-bar">
 
 
-            @include('includes.side-bar-employer-planning')
+            @include('includes.employer-side-bar-planning')
 
         </aside>
 
@@ -651,6 +651,8 @@
         </aside>
 
     </section>
+
+    @include('includes.employer-modals')
 
 @endsection
 

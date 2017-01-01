@@ -47,7 +47,7 @@ $('.lower-list li').click(function() {
     /* Falls die Unterliste (Mitarbeiternamen) versteckt sind */
     if($(this).children("ul").is(':hidden')) {
 
-        /* zeig die Unterliste an */
+        /* zeigt die Unterliste an */
         $(this).children("ul").show();
     } else {
 

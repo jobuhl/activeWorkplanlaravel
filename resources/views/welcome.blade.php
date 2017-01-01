@@ -10,6 +10,16 @@
 
     <a href="employer-overview">Employer</a>
     <a href="employee-workplan">Employee</a>
+
+    <form action="store" method="POST">
+        <input name="forename" type="text" placeholder="forename"></input>
+        <input name="surname" type="text" placeholder="surname"></input>
+        <input name="email" type="email" placeholder="email"></input>
+        <input name="password" type="password" placeholder="password"></input>
+        <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+        <input type="submit"/>
+    </form>
+
     <!-- Body -->
     <section class="backgroundheadindex">
         <h2 style="display: none">fakeheading</h2>

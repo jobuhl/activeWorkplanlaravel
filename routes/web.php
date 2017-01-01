@@ -74,3 +74,5 @@ Route::get('/employee-account', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::post('store', 'AdminController@store');

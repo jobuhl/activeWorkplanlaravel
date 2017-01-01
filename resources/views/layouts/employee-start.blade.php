@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    @include('includes.head')
+    <head>
+        @include('includes.head')
 
-    @yield('css')
+        @yield('css')
+    </head>
 
     <body>
         @include('includes.header-employee')
@@ -12,10 +14,15 @@
 
         @include('includes.footer')
 
-        <script type="text/javascript" src="{{ asset('/js/general/header-footer.js') }}"></script>
-
     </body>
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     @yield('js')
+
+    <script type="text/javascript" src="{{ asset('/js/general/header-footer.js') }}"></script>
 
 </html>

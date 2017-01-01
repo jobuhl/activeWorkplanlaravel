@@ -49,7 +49,4 @@
     <script type="text/javascript" src="{{ asset('calendar/lib/jquery-ui.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('calendar/fullcalendar.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('calendar/script.js') }}"></script>
-
-    <!-- Kopie, weil Calendar.js-Dateien die Datei überschrieben haben -->
-    <script type="text/javascript" src="{{ asset('js/general/header-footer.js') }}"></script>
 @endsection

@@ -7,7 +7,7 @@ function highlightTab() {
     var url = window.location.pathname;
 
     /* Regular Expression Literale mit Slashes, Gruppierung und Alles durch Gruppe 1 ersetzen */
-    var tabId = url.replace(/.+\/php\/[a-zA-Z_-]+\/([a-zA-Z_-]+)\.php/ , "$1");
+    var tabId = url.replace(/.+\/public\/([a-zA-Z_-]+)[\/a-zA-Z_-]*/ , "$1");
 
 
     /* Sonderfall, da die Mitarbeiter Seite im gleichen Tab wie planning ist */
@@ -107,4 +107,6 @@ $("body")[0].onresize = function () {
     if ($(window).width() < 767 && $("#id-right")[0].className === "right-list responsive") {
         changeSectionUnderHeader("down");
     }
+
+    fixFooter();
 };

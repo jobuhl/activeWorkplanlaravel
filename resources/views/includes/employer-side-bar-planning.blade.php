@@ -70,6 +70,5 @@
 
     <br>
 
-    <p>Es fehlen noch die Modal includes</p>
     <section>
 

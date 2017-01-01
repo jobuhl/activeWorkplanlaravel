@@ -941,7 +941,8 @@
 @endsection
 
 @section('js')
-    <script src="{{asset('js/general/side-bar.js')}}"></script>
-    <script src="{{asset('js/employer/overview')}}"></script>
+    <script type="text/javascript" src="{{ asset('/js/employer/overview.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/js/general/side-bar.js') }}"></script>
+
 @endsection
 
