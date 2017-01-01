@@ -11,6 +11,7 @@
     <body>
         @include('includes.header-employer')
 
+
         @yield('content')
 
         @include('includes.footer')

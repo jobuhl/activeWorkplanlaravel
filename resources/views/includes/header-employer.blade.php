@@ -1,4 +1,10 @@
 <header>
+
+
+    @if (Auth::guest())
+       @include('includes.header-general')
+    @else
+
     <ul class="left-list" id="id-left">
         <li class="nav-image">
             <a href="employer-overview">
@@ -16,8 +22,27 @@
     <ul class="right-list" id="id-right">
         <li><a id="overview" href="employer-overview">Overview</a></li>
         <li><a id="employer-planning" href="employer-planning">Planning</a></li>
-        <li><a id="employer-account" href="employer-account">Account</a></li>
-        <li><a id="welcome" href="welcome">Logout</a></li>
+
+
+
+
+            <li><a id="employer-account" href="employer-account"> {{ Auth::user()->name }}</a></li>
+
+                    <li>
+                        <a href="{{ url('/logout') }}"
+                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+
+                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </li>
+
+            </li>
+        @endif
+
     </ul>
 </header>
 
