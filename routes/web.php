@@ -77,3 +77,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::post('/adminStore', 'AdminController@store');
 
+// ------------------------ Sessions ------------------------
+Route::get('session/get','SessionController@accessSessionData');
+Route::get('session/set','SessionController@storeSessionData');
+Route::get('session/remove','SessionController@deleteSessionData');

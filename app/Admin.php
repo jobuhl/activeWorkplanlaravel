@@ -14,4 +14,6 @@ class Admin extends Model
      * @var string
      */
     protected $table = 'admin';
+
+    protected $fillable = ['id', 'forename', 'surname', 'email', 'password'];
 }

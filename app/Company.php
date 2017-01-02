@@ -14,13 +14,6 @@ class Company extends Model
      */
     protected $table = 'company';
 
-    public function address(){
+    protected $fillable = ['id', 'name', 'admin_id', 'address_id'];
 
-        return belongsTo('address');
-    }
-
-    public function admin(){
-
-        return belongsTo('admin');
-    }
 }

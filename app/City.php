@@ -14,8 +14,7 @@ class City extends Model
      */
     protected $table = 'city';
 
-    public function country(){
 
-        return belongsTo('country');
-    }
+    protected $fillable = ['id', 'name', 'country_id'];
+
 }

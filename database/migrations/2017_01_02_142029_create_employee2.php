@@ -21,10 +21,10 @@ class CreateEmployee2 extends Migration
         $table->string('password');
 
         $table->integer('retail_store_id')->unsigned();
-        $table->foreign('retail_store_id')->references('id')->on('retail_store');
+        $table->foreign('retail_store_id')->references('id')->on('retail_store')->onDelete('cascade');
 
         $table->integer('contract_id')->unsigned();
-        $table->foreign('contract_id')->references('id')->on('contract');
+        $table->foreign('contract_id')->references('id')->on('contract')->onDelete('cascade');
 
         $table->timestamps();
     });

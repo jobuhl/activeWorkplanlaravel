@@ -30,8 +30,8 @@
 
             <!-- Modal body-->
 
-            <!--<form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">-->
-            <form class="form-horizontal" role="form" method="POST" action="{{ url('/adminStore') }}">
+            <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+            <!--<form class="form-horizontal" role="form" method="POST" action="{{ url('/adminStore') }}">-->
 
                 {{ csrf_field() }}
                 <div class="modal-body">

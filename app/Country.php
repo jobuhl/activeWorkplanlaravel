@@ -13,4 +13,6 @@ class Country extends Model
      * @var string
      */
     protected $table = 'country';
+
+    protected $fillable = ['id', 'name'];
 }

@@ -21,7 +21,7 @@ class CreateEmployeePerHour2 extends Migration
         $table->string('end');
 
         $table->integer('retail_store_id')->unsigned();
-        $table->foreign('retail_store_id')->references('id')->on('retail_store');
+        $table->foreign('retail_store_id')->references('id')->on('retail_store')->onDelete('cascade');
 
         $table->timestamps();
     });

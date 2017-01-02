@@ -14,8 +14,6 @@ class Address extends Model
      */
     protected $table = 'address';
 
-    public function City(){
+    protected $fillable = ['id', 'street', 'street_nr', 'postcode', 'city_id'];
 
-        return belongsTo('city');
-    }
 }

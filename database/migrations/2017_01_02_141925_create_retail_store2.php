@@ -18,10 +18,10 @@ class CreateRetailStore2 extends Migration
         $table->string('name');
 
         $table->integer('company_id')->unsigned();
-        $table->foreign('company_id')->references('id')->on('company');
+        $table->foreign('company_id')->references('id')->on('company')->onDelete('cascade');
 
         $table->integer('address_id')->unsigned();
-        $table->foreign('address_id')->references('id')->on('address');
+        $table->foreign('address_id')->references('id')->on('address')->onDelete('cascade');
 
         $table->timestamps();
     });

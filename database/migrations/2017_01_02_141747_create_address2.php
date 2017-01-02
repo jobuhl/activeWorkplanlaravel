@@ -20,7 +20,7 @@ class CreateAddress2 extends Migration
         $table->string('postcode');
 
         $table->integer('city_id')->unsigned();
-        $table->foreign('city_id')->references('id')->on('city');
+        $table->foreign('city_id')->references('id')->on('city')->onDelete('cascade');
 
         $table->timestamps();
     });

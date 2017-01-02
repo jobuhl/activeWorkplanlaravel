@@ -63,57 +63,9 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
+            'name' => $data['forename'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
-    }
-
-    protected function create2(array $data)
-    {
-       /* $user = User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
-        $user_id = $user->id;*/
-
-        $admin = Admin::create([
-            'forename' => $data['forename'],
-            'surname' => $data['surname'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
-        $admin_id = $admin->id;
-
-        $country = Country::create([
-            'name' => $data['country'],
-        ]);
-        $country_id = $country->id;
-
-        $city = City::create([
-            'name' => $data['city'],
-            'country_id' => $country_id,
-        ]);
-        $city_id = $city->id;
-
-        $address = Address::create([
-            'street' => $data['street'],
-            'street_nr' => $data['street_nr'],
-            'postcode' => $data['postcode'],
-            'city_id' => $city_id,
-        ]);
-        $address_id = $address->id;
-
-        $company = Company::create([
-            'name' => $data['company-name'],
-            'admin_id' => $admin_id,
-            'address_id' => $address_id,
-        ]);
-
-        return $admin.$country.$city.$address.$company;
-
-
-
     }
 }

@@ -18,10 +18,10 @@ class CreateCompany2 extends Migration
         $table->string('name');
 
         $table->integer('admin_id')->unsigned();
-        $table->foreign('admin_id')->references('id')->on('admin');
+        $table->foreign('admin_id')->references('id')->on('admin')->onDelete('cascade');
 
         $table->integer('address_id')->unsigned();
-        $table->foreign('address_id')->references('id')->on('address');
+        $table->foreign('address_id')->references('id')->on('address')->onDelete('cascade');
 
         $table->timestamps();
     });

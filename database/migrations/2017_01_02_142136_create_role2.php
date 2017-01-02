@@ -18,7 +18,7 @@ class CreateRole2 extends Migration
         $table->string('name');
 
         $table->integer('contract_id')->unsigned();
-        $table->foreign('contract_id')->references('id')->on('contract');
+        $table->foreign('contract_id')->references('id')->on('contract')->onDelete('cascade');
 
         $table->timestamps();
     });

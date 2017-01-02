@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Session;
+use Response;
+use Illuminate\Support\Facades\Input;
 
 use App\Admin;
 use App\Country;
 use App\City;
 use App\Address;
 use App\Company;
-
-
-use Illuminate\Support\Facades\Input;
 
 class AdminController extends Controller
 {
@@ -37,40 +37,65 @@ class AdminController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * insert new Data into database
      *
-     * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @param Request $data
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function store2(Request $request)
-    {
-        $admin = new Admin;
-
-        $admin->forename = Input::get("forename");
-        $admin->surname = Input::get("surname");
-        $admin->email = Input::get("email");
-        $admin->password = Input::get("password");
-
-        /**
-         * Automatically insertes the data into the database and updates the attributes create_at and updated_at
-         */
-        $admin->save();
-
-        return view('employer-account');
-    }
-
     public function store(Request $data)
     {
-        $admin = DB::table('admin')->insertGetId([
+        $admin = Admin::create(array(
+            'forename' => $data['forename'],
+            'surname' => $data['surname'],
+            'email' => $data['email'],
+            'password' => bcrypt($data['password'])
+        ));
+
+        // Datensatz nur erstellen, wenn noch nicht vorhanden
+        $country = Country::firstOrCreate(array(
+            'name' => $data['country']
+        ));
+
+        $city = City::firstOrCreate(array(
+            'name' => $data['city'],
+            'country_id' => $country->id
+        ));
+
+        // Adresse wird immer erstellt, falls Company umzieht -> einfacher zu warten
+        $address = Address::create(array(
+            'street' => $data['street'],
+            'street_nr' => $data['street_nr'],
+            'postcode' => $data['postcode'],
+            'city_id' => $city->id
+        ));
+
+        Company::create(array(
+            'name' => $data['company-name'],
+            'admin_id' => $admin->id,
+            'address_id' => $address->id
+        ));
+
+    }
+
+    public function store2(Request $data)
+    {
+        /*$admin = DB::table('admin')->insertGetId([
             'forename' => $data['forename'],
             'surname' => $data['surname'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
 
-        $country = DB::table('country')->insertGetId([
-            'name' => $data['country'],
-        ]);
+        // Check if country exists in database
+        $country = DB::table('country')->where('name', $data['country'])->select();
+        // If country not exists in database
+        if (!$country) {
+            // insert into table country
+            $country = DB::table('country')->insertGetId([
+                // give attribute a value
+                'name' => $data['country'],
+            ]);
+        }
 
         $city = DB::table('city')->insertGetId([
             'name' => $data['city'],
@@ -81,15 +106,22 @@ class AdminController extends Controller
             'street' => $data['street'],
             'street_nr' => $data['street_nr'],
             'postcode' => $data['postcode'],
-            'city_id' => $city, //$city return key-value
+            'city_id' => $city->key, //$city return key-value
         ]);
 
-        $company = DB::table('company')->insertGetId([
+        DB::table('company')->insertGetId([
             'name' => $data['company-name'],
             'admin_id' => $admin, //$admin return key-value
             'address_id' => $address, //$address return key-value
         ]);
 
+        //$this->setSession();
+        //return view('/feature');*/
+    }
+
+    public
+    function store1(Request $data)
+    {
         /*$admin = new Admin;
         $admin->forename = $data['forename'];
         $admin->surname = $data['surname'];
@@ -124,15 +156,29 @@ class AdminController extends Controller
         $company->save();*/
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
+    public
+    function setSession()
     {
-        //
+        Session::put('Alex', '1111111111');
+        $value = Session::get('Alex');
+
+        //this will end the request-lifecycle
+        return Response::json(['result' => 'ok']);
+    }
+
+    /**
+     * Show the profile for the given user.
+     *
+     * @param  Request $request
+     * @param  int $id
+     * @return Response
+     */
+    public
+    function show(Request $request, $id)
+    {
+        $value = $request->session()->get('key');
+
+
     }
 
     /**
@@ -141,7 +187,8 @@ class AdminController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public
+    function edit($id)
     {
         //
     }
@@ -153,7 +200,8 @@ class AdminController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public
+    function update(Request $request, $id)
     {
         //
     }
@@ -164,7 +212,8 @@ class AdminController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public
+    function destroy($id)
     {
         //
     }
