@@ -108,6 +108,8 @@
                                 @endif
                             </div>
                         </div>
+
+
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Name</label>
 
@@ -139,14 +141,14 @@
                     <!-- Company-->
                     <div id="company">
                         <h3>Company Details</h3>
-                        <p><input class="form-control" type="email" placeholder="Company name"></p>
+                        <p><input class="form-control" type="email" name="company-name" placeholder="Company name"></p>
 
                         <h3>Company Headquarter Adress</h3>
-                        <p><input class="form-control" type="email" placeholder="Street"></p>
-                        <p><input class="form-control" type="email" placeholder="Street Nr."></p>
-                        <p><input class="form-control" type="email" placeholder="Postcode"></p>
-                        <p><input class="form-control" type="email" placeholder="City"></p>
-                        <p><input class="form-control" type="email" placeholder="Country"></p>
+                        <p><input class="form-control" type="email" name="street" placeholder="Street"></p>
+                        <p><input class="form-control" type="email" name="street_nr" placeholder="Street Nr."></p>
+                        <p><input class="form-control" type="email" name="postcode" placeholder="Postcode"></p>
+                        <p><input class="form-control" type="email" name="location" placeholder="City"></p>
+                        <p><input class="form-control" type="email" name="country" placeholder="Country"></p>
 
                         <div class="modal-footer footer3">
                             <div class="col-xs-6">

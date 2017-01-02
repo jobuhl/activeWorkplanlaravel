@@ -48,7 +48,7 @@ class AdminController extends Controller
          */
         $admin->save();
 
-        return view('feature');
+        return view('employer-account');
     }
 
     /**

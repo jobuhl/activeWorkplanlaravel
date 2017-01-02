@@ -75,6 +75,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-
 Route::post('/adminStore', 'AdminController@store');
 
