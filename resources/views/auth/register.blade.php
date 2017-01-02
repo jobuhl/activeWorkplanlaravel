@@ -30,7 +30,9 @@
 
             <!-- Modal body-->
 
-            <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+            <!--<form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">-->
+            <form class="form-horizontal" role="form" method="POST" action="{{ url('/adminStore') }}">
+
                 {{ csrf_field() }}
                 <div class="modal-body">
 
@@ -95,10 +97,10 @@
                     <div id="user">
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Surame</label>
+                            <label for="name" class="col-md-4 control-label">Forename</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}"
+                                <input id="name" type="text" class="form-control" name="forename" value="{{ old('name') }}"
                                        required autofocus>
 
                                 @if ($errors->has('name'))
@@ -111,11 +113,11 @@
 
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+                            <label for="name" class="col-md-4 control-label">Surname</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}"
-                                       required autofocus>
+                                <input id="name" type="text" class="form-control" name="surname" value="{{ old('name') }}"
+                                       required>
 
                                 @if ($errors->has('name'))
                                     <span class="help-block">
@@ -147,7 +149,7 @@
                         <p><input class="form-control" type="email" name="street" placeholder="Street"></p>
                         <p><input class="form-control" type="email" name="street_nr" placeholder="Street Nr."></p>
                         <p><input class="form-control" type="email" name="postcode" placeholder="Postcode"></p>
-                        <p><input class="form-control" type="email" name="location" placeholder="City"></p>
+                        <p><input class="form-control" type="email" name="city" placeholder="City"></p>
                         <p><input class="form-control" type="email" name="country" placeholder="Country"></p>
 
                         <div class="modal-footer footer3">

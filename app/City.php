@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Location extends Model
+class City extends Model
 {
     /**
      * almutz
@@ -12,5 +12,10 @@ class Location extends Model
      *
      * @var string
      */
-    protected $table = 'location';
+    protected $table = 'city';
+
+    public function country(){
+
+        return belongsTo('country');
+    }
 }

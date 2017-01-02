@@ -13,4 +13,9 @@ class Address extends Model
      * @var string
      */
     protected $table = 'address';
+
+    public function City(){
+
+        return belongsTo('city');
+    }
 }

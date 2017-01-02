@@ -13,4 +13,14 @@ class Company extends Model
      * @var string
      */
     protected $table = 'company';
+
+    public function address(){
+
+        return belongsTo('address');
+    }
+
+    public function admin(){
+
+        return belongsTo('admin');
+    }
 }
