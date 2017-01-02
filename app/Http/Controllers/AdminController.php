@@ -47,6 +47,8 @@ class AdminController extends Controller
          * Automatically insertes the data into the database and updates the attributes create_at and updated_at
          */
         $admin->save();
+
+        return view('feature');
     }
 
     /**

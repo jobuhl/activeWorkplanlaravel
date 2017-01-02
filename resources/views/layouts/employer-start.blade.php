@@ -27,6 +27,4 @@
 
     @yield('js')
 
-
-
 </html>
