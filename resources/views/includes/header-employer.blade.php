@@ -1,10 +1,5 @@
 <header>
 
-
-    @if (Auth::guest())
-       @include('includes.header-general')
-    @else
-
     <ul class="left-list" id="id-left">
         <li class="nav-image">
             <a href="employer-overview">
@@ -41,7 +36,7 @@
                     </li>
 
             </li>
-        @endif
+
 
     </ul>
 </header>
