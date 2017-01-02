@@ -11,7 +11,7 @@
     <a href="employer-overview">Employer</a>
     <a href="employee-workplan">Employee</a>
 
-    <form action="store" method="POST">
+    <form action="feature" method="POST">
         <input name="forename" type="text" placeholder="forename"></input>
         <input name="surname" type="text" placeholder="surname"></input>
         <input name="email" type="email" placeholder="email"></input>

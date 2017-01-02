@@ -652,7 +652,8 @@
 
     </section>
 
-    @include('includes.employer-modals')
+    @include('includes.employer-modals-store')
+    @include('includes.employer-modals-employee')
 
 @endsection
 
